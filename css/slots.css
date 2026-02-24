@@ -1,0 +1,468 @@
+/* 
+   ========================================================================== 
+   SLOTS PAGE STYLES 
+   ========================================================================== 
+*/
+
+/* Hero Section */
+.sl-hero {
+    position: relative;
+    padding: 160px 0 100px;
+    background: linear-gradient(135deg, #0b1120 0%, #1a2235 100%);
+    color: var(--color-white);
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.sl-hero__bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: url('../images/hero-bg.png') no-repeat center center/cover;
+    opacity: 0.15;
+    filter: blur(8px);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.sl-hero__container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sl-hero__pretitle {
+    display: inline-block;
+    color: var(--color-primary);
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.sl-hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    background: linear-gradient(to right, #fff, #e2e8f0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sl-hero__text {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    color: #cbd5e1;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sl-hero__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.sl-hero__actions .btn {
+    min-width: 200px;
+}
+
+.sl-primary-btn {
+    transition: all 0.3s ease;
+}
+
+.sl-primary-btn:hover {
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    transform: scale(1.04);
+}
+
+.sl-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+
+.sl-wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 60px;
+}
+
+.sl-wave .shape-fill {
+    fill: #ffffff;
+}
+
+/* 2. Top Slots & Jackpots */
+.sl-top {
+    padding: 80px 0;
+    background: linear-gradient(to bottom, #ffffff 0%, #eef2f6 40%, #13131c 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.sl-top__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .sl-top__container {
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 60px;
+    }
+}
+
+.sl-top__visual {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.sl-top__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.sl-top__title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 24px;
+    line-height: 1.2;
+}
+
+.sl-top__text {
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.sl-top__actions {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.sl-neon-btn {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8) !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+}
+
+.sl-neon-btn:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* 3. Best Slots Grid */
+.sl-best {
+    padding: 80px 0;
+}
+
+.sl-best__desc {
+    margin: 0 0 50px;
+    color: #e2e8f0;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.sl-best__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 576px) {
+    .sl-best__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sl-best__grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+}
+
+.sl-game-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    aspect-ratio: 1 / 1;
+}
+
+.sl-game-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.sl-game-card__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.sl-game-card__btn {
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.sl-game-card:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 210, 255, 0.4);
+    z-index: 10;
+}
+
+.sl-game-card:hover .sl-game-card__overlay {
+    opacity: 1;
+}
+
+.sl-game-card:hover .sl-game-card__btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.sl-game-card:hover .sl-game-card__img {
+    transform: scale(1.1);
+}
+
+.sl-best__footer {
+    text-align: left;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.sl-best__list {
+    margin-top: 15px;
+    list-style: none;
+}
+
+.sl-best__list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    color: #e2e8f0;
+}
+
+.sl-best__list li strong {
+    color: #ffffff;
+}
+
+.sl-best__list li::before {
+    content: '•';
+    color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* 4. Jackpot */
+.sl-jackpot {
+    background: linear-gradient(to bottom, #111827 0%, #1f2937 100%);
+    color: #fff;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.sl-jackpot__title {
+    margin-bottom: 30px;
+    background: linear-gradient(to right, #ffd700, #ffaa00);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sl-jackpot__intro {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+.sl-jackpot__banner {
+    position: relative;
+    margin: 0 auto 60px;
+    max-width: 900px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.sl-jackpot__img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sl-jackpot__particles {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.particle {
+    position: absolute;
+    background: radial-gradient(circle, #fff 0%, #ffd700 40%, rgba(255, 215, 0, 0) 80%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.sl-jackpot__details {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e2e8f0;
+}
+
+.sl-jackpot__details h3 {
+    color: #fff;
+    margin: 30px 0 15px;
+    font-size: 1.5rem;
+}
+
+.sl-jackpot__list {
+    margin-top: 20px;
+    list-style: none;
+}
+
+.sl-jackpot__list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.sl-jackpot__list li::before {
+    content: '★';
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+}
+
+/* 5. Live Casino */
+.sl-live {
+    padding: 80px 0;
+}
+
+.sl-live__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .sl-live__container {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+}
+
+.sl-live__visual {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.sl-live__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transform-origin: center;
+}
+
+.sl-live__list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.sl-live__list li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 12px;
+    color: #cbd5e1;
+}
+
+.sl-live__list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-primary);
+    border-radius: 50%;
+}
+
+/* 6. Promos */
+.sl-promos {
+    padding: 80px 0;
+    background: #f8fafc;
+}
+
+.sl-promos__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .sl-promos__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.sl-promo-card {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sl-promo-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Others */
+.mt-20 {
+    margin-top: 20px;
+}

@@ -1,0 +1,319 @@
+/* Live Page Styles */
+
+/* Hero */
+.live-hero {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: var(--color-bg-dark);
+    overflow: hidden;
+}
+
+.live-hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/hero-bg.png') center/cover no-repeat;
+    filter: blur(8px) brightness(0.4);
+    z-index: 0;
+}
+
+.live-hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.live-hero__subtitle {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.live-hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.live-hero__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.live-hero__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.live-hero__wave {
+    fill: var(--color-white);
+}
+
+/* Blackjack Section */
+.live-bj {
+    background-color: var(--color-white);
+}
+
+.live-bj__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.live-bj__visual {
+    flex: 1;
+}
+
+.live-bj__img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.live-bj__content {
+    flex: 1;
+}
+
+.live-bj__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 24px;
+    color: var(--color-bg-dark);
+}
+
+.live-bj__text {
+    margin-bottom: 16px;
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+.live-bj__list {
+    margin-top: 24px;
+    margin-bottom: 32px;
+    list-style: none;
+    padding: 0;
+}
+
+.live-bj__list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: var(--color-text);
+}
+
+.live-bj__list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+.live-bj__action {
+    text-align: right;
+}
+
+/* Roulette Section */
+.live-roulette {
+    background-color: var(--color-bg-dark);
+}
+
+.live-roulette__top-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: var(--color-text-muted);
+}
+
+.live-roulette__top-text p {
+    margin-bottom: 16px;
+}
+
+.live-roulette__list-top {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto 0;
+    color: var(--color-text-muted);
+    padding-left: 20px;
+}
+
+.live-roulette__list-top li {
+    margin-bottom: 8px;
+}
+
+.live-roulette__banner {
+    width: 100%;
+    margin-bottom: 60px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.15);
+}
+
+.live-roulette__banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.live-roulette__bottom {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.live-roulette__subtitle {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 24px;
+}
+
+.live-roulette__bottom-text {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.live-roulette__bottom-text p {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+}
+
+.live-roulette__list {
+    margin-top: 20px;
+    padding-left: 20px;
+    color: var(--color-text-muted);
+}
+
+.live-roulette__list li {
+    margin-bottom: 12px;
+}
+
+.live-roulette__list strong {
+    color: var(--color-white);
+}
+
+/* Strategies Section */
+.live-strategies {
+    background-color: var(--color-white);
+}
+
+.live-strategies__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.live-strategies__content {
+    flex: 1;
+}
+
+.live-strategies__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 24px;
+    color: var(--color-bg-dark);
+}
+
+.live-strategies__text {
+    margin-bottom: 24px;
+    color: var(--color-text);
+}
+
+.live-strategies__list {
+    margin-bottom: 32px;
+    padding-left: 20px;
+    color: var(--color-text);
+}
+
+.live-strategies__list li {
+    margin-bottom: 16px;
+    padding-left: 10px;
+}
+
+.live-strategies__list strong {
+    color: var(--color-bg-dark);
+}
+
+.live-strategies__action {
+    text-align: left;
+}
+
+.live-strategies__visual {
+    flex: 1;
+}
+
+.live-strategies__img {
+    width: 100%;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Promos Section */
+.live-promos {
+    background-color: var(--color-bg-light);
+}
+
+.live-promos .promo-slide {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.live-promos__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Partners */
+.live-partners {
+    padding-bottom: 60px;
+}
+
+.live-partners__subtitle {
+    color: var(--color-text-muted);
+    margin-top: -20px;
+    margin-bottom: 40px;
+}
+
+.live-partners__list {
+    justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .live-bj__container,
+    .live-strategies__container {
+        flex-direction: column;
+    }
+
+    .live-promos__grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .live-hero {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .live-hero__actions {
+        flex-direction: column;
+    }
+
+    .live-hero__actions .btn {
+        width: 100%;
+    }
+}

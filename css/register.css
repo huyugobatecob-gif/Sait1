@@ -1,0 +1,733 @@
+/* =========================================================================
+   REGISTER PAGE STYLES
+   ========================================================================= */
+
+/* Hero */
+.register-hero {
+    background: linear-gradient(rgba(20, 24, 33, 0.7), rgba(20, 24, 33, 0.9)), url('../images/hero-bg.png') center/cover no-repeat;
+    background-attachment: fixed;
+    /* Parallax effect */
+    padding: 100px 0 140px 0;
+    text-align: center;
+}
+
+.register-hero .hero__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-hero .hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.register-hero .hero__title {
+    font-size: 3.5rem;
+    margin-bottom: 25px;
+}
+
+.register-hero .hero__text {
+    font-size: 1.125rem;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+}
+
+.register-hero .hero__actions {
+    justify-content: center;
+}
+
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.wave-anim svg {
+    animation: waveMovement 15s linear infinite alternate;
+}
+
+@keyframes waveMovement {
+    0% {
+        transform: translateX(0) scaleY(1);
+    }
+
+    50% {
+        transform: translateX(-2%) scaleY(1.1);
+    }
+
+    100% {
+        transform: translateX(0) scaleY(1);
+    }
+}
+
+/* Sticky Header State */
+.header--sticky {
+    padding: 5px 0;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    background-color: rgba(15, 18, 25, 0.98);
+}
+
+.header--sticky .header__container {
+    height: 60px;
+    transition: height var(--transition-base);
+}
+
+.header--sticky .logo__img {
+    height: 70px;
+}
+/* =========================================================================
+   REGISTER MAIN SECTION (Form & Instructions)
+   ========================================================================= */
+.register-main {
+    padding: 80px 0;
+    background-color: #f4f5f9;
+}
+
+.register-main__container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+@media (max-width: 991px) {
+    .register-main__container {
+        flex-direction: column;
+    }
+}
+
+/* --- Form Widget --- */
+.register-form-widget {
+    flex: 0 0 450px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    overflow: hidden;
+    color: var(--color-text-dark, #333);
+}
+
+@media (max-width: 991px) {
+    .register-form-widget {
+        flex: 1 1 auto;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
+
+.form-widget__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #eee;
+}
+
+.form-widget__title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: #111;
+}
+
+.form-widget__close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.form-widget__close:hover {
+    color: #333;
+}
+
+.form-widget__banner {
+    background: linear-gradient(135deg, #FF0080 0%, #7928CA 100%);
+    color: #fff;
+    padding: 15px 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-widget__banner-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-badge {
+    background: #FFE200;
+    color: #333;
+    font-weight: 800;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.banner-text {
+    font-weight: 700;
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.2;
+}
+
+.form-widget__body {
+    padding: 24px;
+}
+
+/* Tabs */
+.form-tabs {
+    display: flex;
+    position: relative;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #eee;
+}
+
+.form-tab {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.form-tab.active {
+    color: var(--color-primary);
+}
+
+.form-tabs__indicator {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: transform 0.3s ease;
+}
+
+/* Form Groups */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.form-input:focus, .form-select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.1);
+}
+
+/* Floating Label Magic */
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: all 0.2s ease;
+    background: #fff; /* For masking border when floating */
+    padding: 0 4px;
+}
+
+.form-input:focus ~ .form-label,
+.form-input:not(:placeholder-shown) ~ .form-label {
+    top: 0;
+    font-size: 0.75rem;
+    color: var(--color-primary);
+    background: #fff; /* or match input background if not #fff */
+}
+.form-input:not(:focus):not(:placeholder-shown) ~ .form-label {
+    color: #777;
+    background: transparent;
+    padding:0;
+    margin-top: -1px;
+}
+
+
+/* Password Toggle */
+.password-toggle {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+}
+.password-toggle:hover { color: #555; }
+.password-toggle svg { width: 20px; height: 20px; }
+
+/* Select (Custom styling basic) */
+.form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+/* Promo Code */
+.promo-group {
+    position: relative;
+}
+.promo-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-weight: bold;
+}
+.form-input--promo {
+    padding-left: 40px;
+    background-color: rgba(0, 210, 255, 0.05); /* very subtle blue */
+    border-color: #eee;
+}
+.form-input--promo::placeholder {
+    color: #999;
+}
+.form-input--promo:focus {
+    background-color: #fff;
+}
+
+/* Checkbox */
+.form-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+.form-checkbox input[type="checkbox"] {
+    margin-top: 4px;
+    cursor: pointer;
+}
+.form-checkbox label {
+    font-size: 0.85rem;
+    color: #666;
+    line-height: 1.4;
+    cursor: pointer;
+}
+.form-checkbox label a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* Submit Button */
+.btn--submit {
+    background: linear-gradient(90deg, #FF0080, #7928CA);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(121, 40, 202, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.btn--submit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(121, 40, 202, 0.4);
+    filter: brightness(1.1);
+}
+.btn--submit:active {
+    transform: scale(0.98);
+}
+
+/* Form Footer Link */
+.form-widget__footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.form-link {
+    color: var(--color-primary);
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.form-link:hover {
+    color: #00b8e6;
+    text-decoration: underline;
+}
+
+/* --- Text Instructions --- */
+.register-instructions {
+    flex: 1;
+    color: #333;
+}
+.instructions-title {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #111;
+}
+.instructions-subtitle {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.instructions-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+.btn--outline-gray {
+    border: 2px solid #ccc;
+    background: transparent;
+    color: #333;
+    transition: all 0.3s ease;
+}
+.btn--outline-gray:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+
+/* =========================================================================
+   GUIDE & VERIFICATION SECTIONS
+   ========================================================================= */
+.register-guide {
+    padding: 80px 0;
+}
+
+.guide-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.guide-steps {
+    counter-reset: guide-counter;
+    list-style: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.guide-steps li {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+    color: #bbb;
+    line-height: 1.6;
+}
+
+.guide-steps li::before {
+    counter-increment: guide-counter;
+    content: counter(guide-counter);
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #FF0080, #7928CA);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(255, 0, 128, 0.4);
+}
+
+.guide-steps li strong {
+    color: #fff;
+    display: block;
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+/* --- Illustration Banner --- */
+.register-illustration {
+    padding: 0; /* Full width/height emphasis */
+    background-color: #1a1e29;
+}
+
+.illustration-banner {
+    width: 100%;
+    height: 400px;
+    background: url('../images/hero-bg.png') center/cover no-repeat; /* Reuse for now, ideally a specific banner */
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    margin: -40px 0; /* Overlap effect */
+    z-index: 5;
+    /* Basic tilt handled by JS, but set transition here just in case */
+    transition: transform 0.1s ease-out;
+}
+
+@media (max-width: 768px) {
+    .illustration-banner {
+        height: 250px;
+        margin: 0;
+        border-radius: 12px;
+    }
+}
+
+/* --- Verification --- */
+.register-verification {
+    padding: 100px 0 120px 0;
+    position: relative;
+}
+
+.verification-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.text-columns {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.text-columns p {
+    margin-bottom: 20px;
+    color: #ccc;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    break-inside: avoid;
+}
+
+@media (max-width: 768px) {
+    .text-columns {
+        column-count: 1;
+    }
+}
+
+/* =========================================================================
+   PERSONAL CABINET SECTION
+   ========================================================================= */
+.register-cabinet {
+    padding: 100px 0;
+    background-color: #f9f9fb;
+    color: var(--color-text-dark, #333);
+}
+
+.register-cabinet__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+@media (max-width: 991px) {
+    .register-cabinet__container {
+        flex-direction: column;
+    }
+}
+
+.register-cabinet__content {
+    flex: 1;
+}
+
+.cabinet-intro {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.cabinet-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.cabinet-features li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.cabinet-features li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2300D2FF' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center/contain;
+}
+
+.cabinet-features li strong {
+    color: #111;
+}
+
+.register-cabinet__visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.cabinet-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.cabinet-img:hover {
+    transform: translateY(-10px);
+}
+
+/* =========================================================================
+   PROMO CARDS SECTION
+   ========================================================================= */
+.register-promos {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.register-promos__container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .register-promos__container {
+        flex-direction: column;
+    }
+}
+
+.promo-card {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-8px);
+}
+
+.promo-card--purple {
+    background: linear-gradient(135deg, #7928CA, #FF0080);
+    box-shadow: 0 15px 30px rgba(121, 40, 202, 0.2);
+}
+.promo-card--purple:hover {
+    box-shadow: 0 20px 40px rgba(121, 40, 202, 0.4);
+}
+
+.promo-card--blue {
+    background: linear-gradient(135deg, #00D2FF, #3A7BD5);
+    box-shadow: 0 15px 30px rgba(0, 210, 255, 0.2);
+}
+.promo-card--blue:hover {
+    box-shadow: 0 20px 40px rgba(0, 210, 255, 0.4);
+}
+
+.promo-card__content {
+    position: relative;
+    z-index: 2;
+    max-width: 250px;
+}
+
+.promo-card__badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+}
+
+.promo-card__title {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.promo-card__text {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.promo-card__icon {
+    width: 140px;
+    height: auto;
+    position: absolute;
+    right: 20px;
+    bottom: -10px;
+    z-index: 1;
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.promo-card:hover .promo-card__icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+@media (max-width: 480px) {
+    .promo-card {
+        padding: 30px 20px;
+    }
+    .promo-card__icon {
+        width: 100px;
+        opacity: 0.5; /* Fade out if overlapping too much on mobile */
+    }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - Champion Slots</title>
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <meta name="description"
+        content="Зарегистрируйтесь в Champion Slots чтобы получить доступ к бонусам, слотам и live-играм.">
+</head>
+
+<body class="page">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__left">
+                <a href="#home" class="logo" aria-label="На главную" tabindex="0">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                </a>
+            </div>
+
+            <button class="burger-btn" aria-label="Открыть меню" tabindex="0" aria-expanded="false" id="burger-btn">
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+                <span class="burger-btn__line"></span>
+            </button> <!-- Hamburger for mobile -->
+
+            <nav class="nav" id="main-nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link" tabindex="0">Главная</a></li>
+                    <li class="nav__item"><a href="register.html" class="nav__link nav__link--blue"
+                            tabindex="0">Регистрация</a></li>
+                    <li class="nav__item"><a href="reviews.html" class="nav__link" tabindex="0">Отзывы</a></li>
+                    <li class="nav__item"><a href="slots.html" class="nav__link" tabindex="0">Игровые автоматы</a>
+                    </li>
+                    <li class="nav__item"><a href="live.html" class="nav__link" tabindex="0">Live-игра</a></li>
+                    <li class="nav__item"><a href="bonus.html" class="nav__link" tabindex="0">Бонусы</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__right">
+                <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--outline-blue" tabindex="0" target="_blank">РЕГИСТРАЦИЯ</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Hero Section -->
+        <section id="register-hero" class="hero register-hero">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <span class="hero__subtitle">Личный кабинет</span>
+                    <h1 class="hero__title">Регистрация в Champion slots</h1>
+                    <p class="hero__text reveal">Личный кабинет — это ваш центр управления слотами, лайв-играми,
+                        бонусами, платежами и турнирами.</p>
+                    <div class="hero__actions reveal" style="transition-delay: 100ms;">
+                        <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--blue" tabindex="0" target="_blank">ДЕМО ИГРА</a>
+                        <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--outline-white" tabindex="0" target="_blank">РЕГИСТРАЦИЯ</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Wave Shape Divider -->
+            <div class="custom-shape-divider-bottom wave-anim">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Form and Instructions -->
+        <section class="section register-main" id="register">
+            <div class="container register-main__container">
+
+                <!-- Left: Form Widget -->
+                <div class="register-form-widget reveal">
+                    <div class="form-widget__header">
+                        <h2 class="form-widget__title">Регистрация</h2>
+                        <button class="form-widget__close" aria-label="Закрыть">×</button>
+                    </div>
+
+                    <div class="form-widget__banner">
+                        <div class="form-widget__banner-content">
+                            <span class="banner-badge">100 FS</span>
+                            <p class="banner-text">+350 000 RUB<br>И 500 FS</p>
+                        </div>
+                    </div>
+
+                    <div class="form-widget__body">
+                        <!-- Tabs -->
+                        <div class="form-tabs">
+                            <button class="form-tab active" data-tab="email">Почта</button>
+                            <button class="form-tab" data-tab="phone">Телефон</button>
+                            <div class="form-tabs__indicator"></div>
+                        </div>
+
+                        <!-- Form -->
+                        <form class="register-form" action="#" method="POST">
+
+                            <!-- Email Tab Content -->
+                            <div class="tab-content active" id="tab-email">
+                                <div class="form-group">
+                                    <input type="email" id="reg-email" class="form-input" placeholder=" " required>
+                                    <label for="reg-email" class="form-label">E-mail</label>
+                                </div>
+                            </div>
+
+                            <!-- Phone Tab Content (Hidden by default) -->
+                            <div class="tab-content" id="tab-phone" style="display: none;">
+                                <div class="form-group">
+                                    <input type="tel" id="reg-phone" class="form-input" placeholder=" " required>
+                                    <label for="reg-phone" class="form-label">Телефон</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group password-group">
+                                <input type="password" id="reg-password" class="form-input" placeholder=" " required>
+                                <label for="reg-password" class="form-label">Пароль</label>
+                                <button type="button" class="password-toggle" aria-label="Показать пароль">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                        <circle cx="12" cy="12" r="3"></circle>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group select-group">
+                                    <select class="form-select" id="reg-country" aria-label="Страна">
+                                        <option value="ru" selected>🇷🇺 Россия</option>
+                                        <option value="kz">🇰🇿 Казахстан</option>
+                                        <option value="by">🇧🇾 Беларусь</option>
+                                    </select>
+                                </div>
+                                <div class="form-group select-group">
+                                    <select class="form-select" id="reg-currency" aria-label="Валюта">
+                                        <option value="RUB" selected>RUB</option>
+                                        <option value="KZT">KZT</option>
+                                        <option value="BYN">BYN</option>
+                                        <option value="USD">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group promo-group">
+                                <span class="promo-icon">%</span>
+                                <input type="text" id="reg-promo" class="form-input form-input--promo"
+                                    placeholder="У меня есть промокод">
+                            </div>
+
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="reg-terms" required checked>
+                                <label for="reg-terms">Мне исполнилось 18 лет и я принимаю <a
+                                        href="#">правила</a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn--submit btn--full">Зарегистрироваться</button>
+
+                            <div class="form-widget__footer">
+                                <a href="#" class="form-link">Войти, если вы уже зарегистрированы</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right: Text Instructions -->
+                <div class="register-instructions reveal" style="transition-delay: 150ms;">
+                    <h2 class="instructions-title">Регистрация и вход в казино</h2>
+                    <p class="instructions-subtitle">Пошаговая инструкция</p>
+
+                    <div class="instructions-content">
+                        <p>Наличие аккаунта в Champion Slots открывает игрокам доступ ко всем возможностям казино: игре
+                            на реальные деньги, участию в турнирах, получению бонусов и быстрому выводу средств.</p>
+                        <p>Процесс создания профиля максимально упрощен. Все, что нужно — заполнить небольшую форму,
+                            указав достоверные данные. К регистрации допускаются только совершеннолетние пользователи.
+                            Обратите внимание, что важно указывать только реальную информацию, так как она потребуется
+                            для дальнейшей идентификации.</p>
+                        <p>После завершения регистрации рекомендуется сразу пройти верификацию, чтобы снять любые
+                            ограничения на выплаты. Если аккаунт уже есть, повторно создавать его нельзя — за это
+                            предусмотрена блокировка.</p>
+                    </div>
+
+                    <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--outline-gray btn--large" target="_blank">РЕГИСТРАЦИЯ</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Account Creation Steps -->
+        <section class="section section--dark register-guide">
+            <div class="container register-guide__container reveal">
+                <h2 class="section__title text-center">Создание аккаунта в Champion slots</h2>
+                <div class="guide-content">
+                    <p class="guide-intro">Процедура регистрации занимает не более пары минут. Для удобства
+                        пользователей мы подготовили краткое руководство:</p>
+                    <ol class="guide-steps">
+                        <li><strong>Перейдите на официальный сайт или рабочее зеркало.</strong> Ссылку всегда можно
+                            найти на тематических форумах или в письмах рассылки.</li>
+                        <li><strong>Нажмите кнопку "Регистрация".</strong> Она находится в правом верхнем углу главной
+                            страницы.</li>
+                        <li><strong>Заполните форму.</strong> Укажите актуальный e-mail или номер телефона, придумайте
+                            надежный пароль и выберите валюту счета. Помните, что изменить валюту в дальнейшем будет
+                            проблематично.</li>
+                        <li><strong>Ознакомьтесь с правилами казино и подтвердите совершеннолетие.</strong> Это
+                            обязательное условие для всех легальных площадок. Согласие с правилами защищает как игрока,
+                            так и казино.</li>
+                        <li><strong>Завершите регистрация.</strong> На указанную почту или телефон придет
+                            письмо/сообщение со ссылкой или кодом для активации профиля.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Illustration Banner -->
+        <section class="section register-illustration">
+            <div class="container reveal">
+                <div class="illustration-banner">
+                    <!-- Text overlay within banner if needed, mostly handled by background image / CSS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Verification -->
+        <section class="section section--dark register-verification">
+            <div class="container register-verification__container reveal">
+                <h2 class="section__title text-center">Подтверждение личности</h2>
+                <div class="verification-content text-columns">
+                    <p>Верификация — стандартная процедура, направленная на защиту финансовых операций и предотвращение
+                        мошенничества. Руководство платформы гарантирует полную конфиденциальность переданных данных.
+                        Информация хранится на защищенных серверах и не передается третьим лицам.</p>
+                    <p>Для прохождения процедуры пользователю необходимо загрузить в личном кабинете фотографию или
+                        скан-копию документа, удостоверяющего личность (паспорт, водительские права). В некоторых
+                        случаях служба безопасности может запросить дополнительный документ, например, счет за
+                        коммунальные услуги для подтверждения адреса проживания.</p>
+                    <p>Верификация обычно занимает от нескольких часов до суток. После успешной проверки все ограничения
+                        на вывод средств (если таковые имелись) снимаются. Важно: для проведения финансовых операций
+                        потребуется задать отдельный пароль, который гарантирует дополнительный уровень безопасности.
+                    </p>
+                </div>
+            </div>
+            <!-- Soft Wave -->
+            <div class="custom-shape-divider-bottom wave-anim">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
+                        class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Personal Cabinet -->
+        <section class="section register-cabinet">
+            <div class="container register-cabinet__container">
+                <div class="register-cabinet__content reveal">
+                    <h2 class="section__title section__title--left">Личный кабинет Champion slots</h2>
+                    <p class="cabinet-intro">После авторизации открывается доступ к полному функционалу казино. Дашборд
+                        пользователя интуитивно понятен и разделен на несколько ключевых вкладок:</p>
+                    <ul class="cabinet-features">
+                        <li><strong>Баланс:</strong> отображает текущее состояние основного и бонусного счетов.</li>
+                        <li><strong>Касса:</strong> раздел для проведения операций по пополнению депозита и оформлению
+                            заявок на быстрый вывод.</li>
+                        <li><strong>Бонусы и акции:</strong> здесь можно активировать доступные предложения и
+                            отслеживать прогресс отыгрыша.</li>
+                        <li><strong>История игр:</strong> позволяет просматривать результаты последних вращений и
+                            ставки.</li>
+                        <li><strong>Настройки профиля:</strong> управление личными данными и паролями.</li>
+                        <li><strong>Безопасность:</strong> настройка двухфакторной аутентификации для максимальной
+                            защиты.</li>
+                    </ul>
+                    <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--outline-gray btn--large" target="_blank">РЕГИСТРАЦИЯ</a>
+                </div>
+                <!-- Placeholder visual (can be an illustration or 3D render) -->
+                <div class="register-cabinet__visual reveal" style="transition-delay: 150ms;">
+                    <img src="images/live-dealer.png" alt="Игровой процесс и личный кабинет" class="cabinet-img"
+                        loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Promo Cards -->
+        <section class="section register-promos">
+            <div class="container register-promos__container reveal">
+
+                <a href="#promo1" class="promo-card promo-card--purple" tabindex="0">
+                    <div class="promo-card__content">
+                        <span class="promo-card__badge">Бездепы за регистрацию</span>
+                        <h3 class="promo-card__title">Забирайте 350 000 RUB<br>и 500 FS!</h3>
+                        <p class="promo-card__text">Стартовый пакет для новых чемпионов.</p>
+                    </div>
+                    <img src="images/prisent_no_bg.png" alt="Подарок" class="promo-card__icon" loading="lazy">
+                </a>
+
+                <a href="#promo2" class="promo-card promo-card--blue" tabindex="0">
+                    <div class="promo-card__content">
+                        <span class="promo-card__badge">Стартуй по-чемпионски!</span>
+                        <h3 class="promo-card__title">Бонус 100%<br>на первые депозиты</h3>
+                        <p class="promo-card__text">Удвойте свои шансы на крупный выигрыш.</p>
+                    </div>
+                    <img src="images/prisent_no_bg.png" alt="Спорт" class="promo-card__icon" loading="lazy">
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Partners (Re-used from index.html) -->
+        <section id="providers" class="section section--dark providers">
+            <div class="container text-center reveal">
+                <p class="providers__title">Проверенные провайдеры онлайн казино Champion slots</p>
+                <div class="providers__list">
+                    <div class="providers__logo providers__logo--mrslotty"><span>Mr Slotty</span></div>
+                    <div class="providers__logo providers__logo--isoftbet"><span>iSOFTBET</span><br><small>SIMPLY
+                            PLAY</small></div>
+                    <div class="providers__logo providers__logo--quickspin"><span
+                            class="q">Q</span><span>QUICKSPIN</span></div>
+                    <div class="providers__logo providers__logo--yggdrasil">
+                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
+                            <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        <span>YGGDRASIL</span>
+                    </div>
+                    <div class="providers__logo providers__logo--playngo"><span>PLAY'n GO</span></div>
+                    <div class="providers__logo providers__logo--netent"><span>NETENT</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ (Re-used structure, new content) -->
+        <section id="faq" class="section section--dark faq">
+            <div class="container faq__container">
+                <div class="faq__header text-center reveal">
+                    <h2 class="faq__title">Вопрос &ndash; ответ</h2>
+                    <p class="faq__subtitle">Часто задаваемые вопросы</p>
+                </div>
+                <div class="faq__grid reveal">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" onclick="handleFaqToggle(this)">
+                            <span class="faq__question-text">Нужна ли верификация для вывода средств?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Большинство небольших сумм выводится без верификации. Однако служба безопасности
+                                оставляет за собой право запросить подтверждение личности при выводе крупных выигрышей
+                                или при подозрении на мошенничество.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" onclick="handleFaqToggle(this)">
+                            <span class="faq__question-text">С какого возраста можно играть?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Регистрация на сайте онлайн казино Champion Slots разрешена строго с 18 лет. Лицам, не
+                                достигшим совершеннолетия по законам страны их проживания, доступ к игре на деньги
+                                закрыт.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" onclick="handleFaqToggle(this)">
+                            <span class="faq__question-text">Безопасны ли мои личные данные?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Да, мы используем современные протоколы шифрования SSL для передачи и хранения данных.
+                                Ваши пароли и платежная информация надежно защищены и не передаются третьим лицам.</p>
+                        </div>
+                    </div>
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false" onclick="handleFaqToggle(this)">
+                            <span class="faq__question-text">Могу ли я закрыть аккаунт навсегда?</span>
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Да, если вы решили прекратить игру, вы можете запросить блокировку или удаление профиля
+                                через службу поддержки в онлайн-чате или по электронной почте. Также доступна функция
+                                самоисключения на определенный срок.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <a href="#home" class="logo" aria-label="На главную" tabindex="0">
+                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+            </a>
+            <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js" defer></script>
+</body>
+
+</html>

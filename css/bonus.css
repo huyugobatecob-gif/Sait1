@@ -1,0 +1,356 @@
+/* Bonus Page Styles */
+
+/* Hero */
+.bonus-hero {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: var(--color-bg-dark);
+    overflow: hidden;
+}
+
+.bonus-hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/hero-bg.png') center/cover no-repeat;
+    filter: blur(8px) brightness(0.4);
+    z-index: 0;
+}
+
+.bonus-hero__container {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bonus-hero__subtitle {
+    display: block;
+    font-size: 1.125rem;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.bonus-hero__title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.bonus-hero__text {
+    font-size: 1.125rem;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.bonus-hero__actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.bonus-hero__wave {
+    fill: var(--color-bg-main);
+}
+
+/* Info Section */
+.bonus-info {
+    background-color: var(--color-bg-main);
+}
+
+.bonus-info__container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.bonus-info__content {
+    flex: 1;
+}
+
+.bonus-info__text {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.bonus-info__subtitle {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.bonus-info__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bonus-info__list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: var(--color-text-muted);
+}
+
+.bonus-info__list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.bonus-info__visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus-info__img {
+    max-width: 100%;
+    border-radius: 16px;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Welcome Section */
+.bonus-welcome__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.bonus-card-custom {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px;
+    height: 100%;
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.bonus-card-custom:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 215, 0, 0.2);
+}
+
+.bonus-welcome__title {
+    font-size: 1.75rem;
+    color: var(--color-white);
+    margin-bottom: 20px;
+}
+
+.bonus-welcome__text {
+    color: var(--color-text-muted);
+    line-height: 1.6;
+}
+
+.bonus-welcome__list {
+    padding-left: 20px;
+    color: var(--color-text-muted);
+}
+
+.bonus-welcome__list li {
+    margin-bottom: 8px;
+}
+
+/* Promo and Tournaments */
+.bonus-promo {
+    background-color: var(--color-bg-main);
+}
+
+.bonus-promo__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.bonus-promo__title {
+    font-size: 2rem;
+    color: var(--color-white);
+    margin-bottom: 24px;
+}
+
+.bonus-promo__text {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.bonus-promo__subtitle {
+    font-size: 1.25rem;
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.bonus-promo__list {
+    list-style: none;
+    padding: 0;
+}
+
+.bonus-promo__list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 12px;
+    color: var(--color-text-muted);
+}
+
+.bonus-promo__list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4A90E2;
+    font-weight: bold;
+}
+
+.bonus-promo__list-num {
+    padding-left: 20px;
+    color: var(--color-text-muted);
+}
+
+.bonus-promo__list-num li {
+    margin-bottom: 12px;
+}
+
+.tournament-box {
+    background: linear-gradient(135deg, rgba(20, 24, 33, 0.8), rgba(28, 34, 45, 0.9));
+    border-left: 4px solid var(--color-primary);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.tournament-box__title {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-bottom: 16px;
+}
+
+.tournament-box__text {
+    color: var(--color-text-muted);
+    margin-bottom: 16px;
+}
+
+/* Promos Section Banner overrides */
+.bonus-banners {
+    background-color: var(--color-bg-light);
+}
+
+.bonus-banners .promo-slide {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.bonus-banners__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* Margin Utilities */
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+/* Custom Images & Animations */
+.bonus-card-img {
+    max-width: 140px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.4));
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.bonus-card-custom:hover .bonus-card-img {
+    transform: scale(1.15) rotate(5deg);
+}
+
+.bonus-promo-img {
+    max-width: 180px;
+    height: auto;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.3));
+    transition: transform 0.4s ease;
+}
+
+.bonus-promo__block:hover .bonus-promo-img {
+    transform: translateY(-8px) scale(1.05);
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    .bonus-info__container,
+    .bonus-welcome__grid,
+    .bonus-promo__grid,
+    .bonus-banners__grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .bonus-hero {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .bonus-hero__actions {
+        flex-direction: column;
+    }
+
+    .bonus-hero__actions .btn {
+        width: 100%;
+    }
+}
