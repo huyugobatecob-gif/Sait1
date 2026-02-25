@@ -16,7 +16,10 @@
         <div class="header__container container">
             <div class="header__left">
                 <a href="#home" class="logo" aria-label="На главную" tabindex="0">
-                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                    </picture>
                 </a>
             </div>
 
@@ -26,10 +29,10 @@
                 <span class="burger-btn__line"></span>
             </button> <!-- Hamburger for mobile -->
 
-            <nav class="nav" id="main-nav">
+            <nav class="nav" id="main-nav" aria-label="Основная навигация">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html#home" class="nav__link nav__link--blue nav__link--active"
-                            tabindex="0">Главная</a></li>
+                            tabindex="0" aria-current="page">Главная</a></li>
                     <li class="nav__item"><a href="register.html" class="nav__link" tabindex="0">Регистрация</a></li>
                     <li class="nav__item"><a href="reviews.html" class="nav__link" tabindex="0">Отзывы</a></li>
                     <li class="nav__item"><a href="slots.html" class="nav__link" tabindex="0">Игровые автоматы</a>
@@ -48,11 +51,11 @@
 
     <main class="main">
         <!-- Главная -->
-        <section id="home" class="hero">
+        <section aria-labelledby="heading-index-0" id="home" class="hero">
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__subtitle">Обзор официального сайта</span>
-                    <h1 class="hero__title">Онлайн-казино<br>Champion slots</h1>
+                    <h id="heading-index-0" 1 class="hero__title">Онлайн-казино<br>Champion slots</h1>
                     <p class="hero__text">Онлайн казино Champion slots имеет длительную историю и официальную лицензию.
                         Удобный интерфейс, бонусы и большой выбор игр вызывают интерес у пользователей.</p>
                     <div class="hero__actions">
@@ -64,13 +67,17 @@
                 </div>
                 <div class="hero__visual">
                     <div class="hero__glow-box">
-                        <img src="images/hero-bg.png" alt="Интерфейс казино" class="hero__mockup-img">
+                        <picture>
+                            <source srcset="images/hero-bg.webp" type="image/webp">
+                            <img src="images/hero-bg.png" alt="Интерфейс казино" class="hero__mockup-img" width="640"
+                                height="640">
+                        </picture>
                     </div>
                 </div>
             </div>
             <!-- Wave Shape Divider -->
             <div class="custom-shape-divider-bottom">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -80,11 +87,11 @@
         </section>
 
         <!-- Slots Showcase (Second Block) -->
-        <section class="slots-showcase section">
+        <section aria-labelledby="heading-index-1" class="slots-showcase section">
             <div class="slots-showcase__container container">
                 <div class="slots-showcase__content">
                     <span class="slots-showcase__subtitle">Доступ к лучшим слотам Champion slots</span>
-                    <h2 class="slots-showcase__title">Слоты Champion slots</h2>
+                    <h id="heading-index-1" 2 class="slots-showcase__title">Слоты Champion slots</h2>
                     <p class="slots-showcase__text">
                         Игровая коллекция Champion slots включает классические автоматы и современные видеослоты с
                         бонусными функциями и джекпотами. Такой подход позволяет удовлетворить интересы как поклонников
@@ -98,16 +105,30 @@
                 <div class="slots-showcase__visual">
                     <div class="slots-showcase__cards">
                         <div class="slots-showcase__card slots-showcase__card--1">
-                            <img src="images/fish_road.png" alt="Слот Fish Road" loading="lazy">
+                            <picture>
+                                <source srcset="images/fish_road.webp" type="image/webp">
+                                <img src="images/fish_road.png" alt="Слот Fish Road" width="640" height="640"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="slots-showcase__card slots-showcase__card--2">
-                            <img src="images/live-dealer.png" alt="Казино" loading="lazy">
+                            <picture>
+                                <source srcset="images/live-dealer.webp" type="image/webp">
+                                <img src="images/live-dealer.png" alt="Казино" width="640" height="640" loading="lazy">
+                            </picture>
                         </div>
                         <div class="slots-showcase__card slots-showcase__card--3">
-                            <img src="images/diver.png" alt="Слот Diver" loading="lazy">
+                            <picture>
+                                <source srcset="images/diver.webp" type="image/webp">
+                                <img src="images/diver.png" alt="Слот Diver" width="640" height="640" loading="lazy">
+                            </picture>
                         </div>
                         <div class="slots-showcase__card slots-showcase__card--4">
-                            <img src="images/chicken_vegas.png" alt="Слот Chicken Vegas" loading="lazy">
+                            <picture>
+                                <source srcset="images/chicken_vegas.webp" type="image/webp">
+                                <img src="images/chicken_vegas.png" alt="Слот Chicken Vegas" width="640" height="640"
+                                    loading="lazy">
+                            </picture>
                         </div>
                     </div>
                 </div>
@@ -115,13 +136,13 @@
         </section>
 
         <!-- Преимущества -->
-        <section class="advantages section">
+        <section aria-labelledby="heading-index-2" class="advantages section">
             <div class="container">
-                <h2 class="section__title advantages__title">Преимущества Champion Slots</h2>
+                <h id="heading-index-2" 2 class="section__title advantages__title">Преимущества Champion Slots</h2>
                 <div class="advantages__grid">
                     <div class="advantages__card">
                         <div class="advantages__icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
@@ -142,7 +163,7 @@
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
@@ -155,7 +176,7 @@
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
@@ -168,7 +189,7 @@
                     </div>
                     <div class="advantages__card">
                         <div class="advantages__icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            <svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
@@ -184,16 +205,18 @@
         </section>
 
         <!-- Промо блок -->
-        <section class="promo-box section">
+        <section aria-labelledby="heading-index-3" class="promo-box section">
             <div class="promo-box__bg">
                 <div class="container">
                     <div class="promo-box__top">
                         <div class="promo-box__gift-wrapper">
-                            <img src="images/logo.png" alt="Logo" width="100" height="auto" loading="lazy"
-                                class="promo-box__gift">
+                            <picture>
+                                <source srcset="images/logo.webp" type="image/webp">
+                                <img src="images/logo.png" alt="Logo" class="promo-box__gift" width="360" height="250">
+                            </picture>
                         </div>
                         <div class="promo-box__content">
-                            <h2 class="promo-box__title">Активируй подарок в личном кабинете и<br>играй за счет казино!
+                            <h id="heading-index-3" 2 class="promo-box__title">Активируй подарок в личном кабинете и<br>играй за счет казино!
                             </h2>
                             <p class="promo-box__subtitle">+ 350 000 RUB и 600 FS к первым депозитам</p>
                         </div>
@@ -219,8 +242,11 @@
                                 <h3 class="promo-slide__title">+ 350 000 RUB и<br>600 FS<br>к депозитам</h3>
                                 <span class="promo-slide__bottom">акция для новых игроков</span>
                             </div>
-                            <img src="images/promo_slide_1.png" alt="БезДепы за регистрацию" loading="lazy"
-                                class="promo-slide__img">
+                            <picture>
+                                <source srcset="images/promo_slide_1.webp" type="image/webp">
+                                <img src="images/promo_slide_1.png" alt="БезДепы за регистрацию"
+                                    class="promo-slide__img" width="640" height="640" loading="lazy">
+                            </picture>
                         </a>
                         <!-- Slide 2 -->
                         <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
@@ -230,8 +256,11 @@
                                 <h3 class="promo-slide__title">Прокачай год<br>на 590 FS</h3>
                                 <span class="promo-slide__bottom">Акция</span>
                             </div>
-                            <img src="images/promo_slide_2.png" alt="Скачки на прокачку" loading="lazy"
-                                class="promo-slide__img">
+                            <picture>
+                                <source srcset="images/promo_slide_2.webp" type="image/webp">
+                                <img src="images/promo_slide_2.png" alt="Скачки на прокачку" class="promo-slide__img"
+                                    width="640" height="640" loading="lazy">
+                            </picture>
                         </a>
                         <!-- Slide 3 -->
                         <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
@@ -241,8 +270,11 @@
                                 <h3 class="promo-slide__title">Возврат до 20%<br>каждую неделю</h3>
                                 <span class="promo-slide__bottom">Бонус</span>
                             </div>
-                            <img src="images/promo_slide_3.png" alt="Кэшбэк выходного дня" loading="lazy"
-                                class="promo-slide__img">
+                            <picture>
+                                <source srcset="images/promo_slide_3.webp" type="image/webp">
+                                <img src="images/promo_slide_3.png" alt="Кэшбэк выходного дня" class="promo-slide__img"
+                                    width="640" height="640" loading="lazy">
+                            </picture>
                         </a>
                         <!-- Slide 4 -->
                         <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
@@ -252,8 +284,11 @@
                                 <h3 class="promo-slide__title">Призовой фонд<br>1 000 000 RUB</h3>
                                 <span class="promo-slide__bottom">Турнир</span>
                             </div>
-                            <img src="images/promo_slide_4.png" alt="Турнир Жаркая зима" loading="lazy"
-                                class="promo-slide__img">
+                            <picture>
+                                <source srcset="images/promo_slide_4.webp" type="image/webp">
+                                <img src="images/promo_slide_4.png" alt="Турнир Жаркая зима" class="promo-slide__img"
+                                    width="640" height="640" loading="lazy">
+                            </picture>
                         </a>
                         <!-- Slide 5 -->
                         <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
@@ -263,22 +298,25 @@
                                 <h3 class="promo-slide__title">Удвоенный шанс<br>на джекпот</h3>
                                 <span class="promo-slide__bottom">Событие</span>
                             </div>
-                            <img src="images/promo_slide_5.png" alt="Счастливые часы" loading="lazy"
-                                class="promo-slide__img">
+                            <picture>
+                                <source srcset="images/promo_slide_5.webp" type="image/webp">
+                                <img src="images/promo_slide_5.png" alt="Счастливые часы" class="promo-slide__img"
+                                    width="640" height="640" loading="lazy">
+                            </picture>
                         </a>
                     </div>
 
                     <div class="promo-slider__nav">
                         <button class="promo-slider__btn promo-slider__btn--prev" id="promoSliderPrev"
                             aria-label="Предыдущий слайд">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M15 18l-6-6 6-6" />
                             </svg>
                         </button>
                         <button class="promo-slider__btn promo-slider__btn--next" id="promoSliderNext"
                             aria-label="Следующий слайд">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M9 18l6-6-6-6" />
                             </svg>
@@ -289,63 +327,100 @@
         </section>
 
         <!-- Популярные слоты сейчас -->
-        <section id="slots" class="popular-slots section">
+        <section aria-labelledby="heading-index-4" id="slots" class="popular-slots section">
             <div class="container text-center">
-                <h2 class="section__title">Популярные слоты сейчас</h2>
+                <h id="heading-index-4" 2 class="section__title">Популярные слоты сейчас</h2>
                 <p class="popular-slots__subtitle">Можно играть в демо-версии совершенно бесплатно</p>
                 <div class="popular-slots__grid">
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Fish Road" target="_blank">
-                        <img src="images/fish_road.png" alt="Fish Road" loading="lazy" class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/fish_road.webp" type="image/webp">
+                            <img src="images/fish_road.png" alt="Fish Road" class="popular-slots__img" width="640"
+                                height="640" loading="lazy">
+                        </picture>
                     </a>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Diver" target="_blank">
-                        <img src="images/diver.png" alt="Diver" loading="lazy" class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/diver.webp" type="image/webp">
+                            <img src="images/diver.png" alt="Diver" class="popular-slots__img" width="640" height="640"
+                                loading="lazy">
+                        </picture>
                     </a>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Chicken Road Vegas" target="_blank">
-                        <img src="images/chicken_vegas.png" alt="Chicken Road Vegas" loading="lazy"
-                            class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/chicken_vegas.webp" type="image/webp">
+                            <img src="images/chicken_vegas.png" alt="Chicken Road Vegas" class="popular-slots__img"
+                                width="640" height="640" loading="lazy">
+                        </picture>
                     </a>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Sugar Rush 1000" target="_blank">
-                        <img src="images/sugar_rush.png" alt="Sugar Rush 1000" loading="lazy"
-                            class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/sugar_rush.webp" type="image/webp">
+                            <img src="images/sugar_rush.png" alt="Sugar Rush 1000" class="popular-slots__img"
+                                width="640" height="640" loading="lazy">
+                        </picture>
                     </a>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Le Zeus" target="_blank">
-                        <img src="images/le_zeus.png" alt="Le Zeus" loading="lazy" class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/le_zeus.webp" type="image/webp">
+                            <img src="images/le_zeus.png" alt="Le Zeus" class="popular-slots__img" width="640"
+                                height="640" loading="lazy">
+                        </picture>
                     </a>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="popular-slots__item"
                         tabindex="0" aria-label="Gates of Olympus" target="_blank">
-                        <img src="images/olympus.png" alt="Gates of Olympus" loading="lazy" class="popular-slots__img">
+                        <picture>
+                            <source srcset="images/olympus.webp" type="image/webp">
+                            <img src="images/olympus.png" alt="Gates of Olympus" class="popular-slots__img" width="640"
+                                height="640" loading="lazy">
+                        </picture>
                     </a>
                 </div>
             </div>
         </section>
 
         <!-- Гарантия честности -->
-        <section id="fairness" class="fairness section">
+        <section aria-labelledby="heading-index-5" id="fairness" class="fairness section">
             <div class="fairness__container container">
                 <div class="fairness__visual">
                     <div class="fairness__cards">
                         <div class="fairness__card fairness__card--1">
-                            <img src="images/olympus.png" alt="Gates of Olympus" loading="lazy">
+                            <picture>
+                                <source srcset="images/olympus.webp" type="image/webp">
+                                <img src="images/olympus.png" alt="Gates of Olympus" width="640" height="640"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="fairness__card fairness__card--2">
-                            <img src="images/sugar_rush.png" alt="Sugar Rush" loading="lazy">
+                            <picture>
+                                <source srcset="images/sugar_rush.webp" type="image/webp">
+                                <img src="images/sugar_rush.png" alt="Sugar Rush" width="640" height="640"
+                                    loading="lazy">
+                            </picture>
                         </div>
                         <div class="fairness__card fairness__card--3">
-                            <img src="images/le_zeus.png" alt="Le Zeus" loading="lazy">
+                            <picture>
+                                <source srcset="images/le_zeus.webp" type="image/webp">
+                                <img src="images/le_zeus.png" alt="Le Zeus" width="640" height="640" loading="lazy">
+                            </picture>
                         </div>
                         <div class="fairness__card fairness__card--4">
-                            <img src="images/chicken_vegas.png" alt="Chicken Vegas" loading="lazy">
+                            <picture>
+                                <source srcset="images/chicken_vegas.webp" type="image/webp">
+                                <img src="images/chicken_vegas.png" alt="Chicken Vegas" width="640" height="640"
+                                    loading="lazy">
+                            </picture>
                         </div>
                     </div>
                 </div>
                 <div class="fairness__content">
                     <span class="fairness__subtitle">Стабильная гарантия</span>
-                    <h2 class="fairness__title">Честность Champion slots</h2>
+                    <h id="heading-index-5" 2 class="fairness__title">Честность Champion slots</h2>
                     <p class="fairness__text">
                         Все представленные игры проходят обязательную сертификацию и работают на основе генератора
                         случайных чисел, что обеспечивает случайность результатов и честный исход каждого спина. Это
@@ -360,29 +435,33 @@
         </section>
 
         <!-- Live-игра -->
-        <section id="live" class="section section--dark live">
+        <section aria-labelledby="heading-index-6" id="live" class="section section--dark live">
             <div class="container live__container">
                 <div class="live__content">
-                    <h2 class="section__title section__title--left">Live-Казино</h2>
+                    <h id="heading-index-6" 2 class="section__title section__title--left">Live-Казино</h2>
                     <p class="live__text">Погрузитесь в атмосферу настоящего казино с живыми дилерами. Рулетка, блэкджек
                         и покер в режиме реального времени.</p>
                     <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="btn btn--primary"
                         tabindex="0" target="_blank">Присоединиться к столу</a>
                 </div>
                 <div class="live__image-wrapper">
-                    <img src="images/live-dealer.png" alt="Дилер за игровым столом" loading="lazy" class="live__img">
+                    <picture>
+                        <source srcset="images/live-dealer.webp" type="image/webp">
+                        <img src="images/live-dealer.png" alt="Дилер за игровым столом" class="live__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </section>
 
         <!-- Бонусы -->
-        <section id="bonuses" class="section bonuses">
+        <section aria-labelledby="heading-index-7" id="bonuses" class="section bonuses">
             <div class="container">
-                <h2 class="section__title">Акции и бонусы</h2>
+                <h id="heading-index-7" 2 class="section__title">Акции и бонусы</h2>
                 <div class="bonuses__list">
                     <div class="bonus-card" tabindex="0">
                         <div class="bonus-card__icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" style="color: var(--color-primary);">
                                 <polyline points="20 12 20 22 4 22 4 12"></polyline>
@@ -397,7 +476,7 @@
                     </div>
                     <div class="bonus-card" tabindex="0">
                         <div class="bonus-card__icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" style="color: var(--color-primary);">
                                 <rect x="2" y="6" width="20" height="12" rx="2"></rect>
@@ -410,7 +489,7 @@
                     </div>
                     <div class="bonus-card" tabindex="0">
                         <div class="bonus-card__icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+                            <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" style="color: var(--color-primary);">
                                 <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
@@ -429,9 +508,9 @@
         </section>
 
         <!-- Отзывы -->
-        <section id="reviews" class="section section--dark reviews">
+        <section aria-labelledby="heading-index-8" id="reviews" class="section section--dark reviews">
             <div class="container">
-                <h2 class="section__title">Отзывы игроков</h2>
+                <h id="heading-index-8" 2 class="section__title">Отзывы игроков</h2>
                 <div class="reviews__grid">
                     <div class="review-card" tabindex="0">
                         <div class="review-card__header">
@@ -452,9 +531,9 @@
             </div>
         </section>
         <!-- Провайдеры -->
-        <section id="providers" class="section section--dark providers">
+        <section aria-labelledby="heading-index-9" id="providers" class="section section--dark providers">
             <div class="container text-center">
-                <p class="providers__title">Проверенные провайдеры онлайн казино Champion slots</p>
+                <h id="heading-index-9" 2 class="providers__title">Проверенные провайдеры онлайн казино Champion slots</h2>
                 <div class="providers__list">
                     <div class="providers__logo providers__logo--mrslotty"><span>Mr Slotty</span></div>
                     <div class="providers__logo providers__logo--isoftbet"><span>iSOFTBET</span><br><small>SIMPLY
@@ -463,7 +542,7 @@
                         <span>QUICKSPIN</span>
                     </div>
                     <div class="providers__logo providers__logo--yggdrasil">
-                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
                             <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
                         </svg>
@@ -476,10 +555,10 @@
         </section>
 
         <!-- FAQ -->
-        <section id="faq" class="section section--dark faq">
+        <section aria-labelledby="heading-index-10" id="faq" class="section section--dark faq">
             <div class="container faq__container">
                 <div class="faq__header text-center">
-                    <h2 class="faq__title">Вопрос &ndash; ответ</h2>
+                    <h id="heading-index-10" 2 class="faq__title">Вопрос &ndash; ответ</h2>
                     <p class="faq__subtitle">Часто задаваемые вопросы</p>
                 </div>
                 <div class="faq__grid">
@@ -531,7 +610,10 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="#home" class="logo" aria-label="На главную" tabindex="0">
-                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                </picture>
             </a>
             <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
         </div>

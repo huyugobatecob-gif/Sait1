@@ -96,10 +96,6 @@
     color: var(--color-primary);
 }
 
-.nav__link--highlight {
-    color: var(--color-primary);
-    font-weight: 700;
-}
 
 .nav__link--blue {
     color: #007bff;

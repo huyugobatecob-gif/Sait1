@@ -1,34 +1,4 @@
 export class Utils {
-    static initRevealOnScroll() {
-        const revealElements = document.querySelectorAll('.reveal');
-        if (revealElements.length === 0) return;
-
-        const revealOptions = {
-            threshold: 0.15,
-            rootMargin: "0px 0px -50px 0px"
-        };
-
-        const revealOnScroll = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, revealOptions);
-
-        revealElements.forEach(el => revealOnScroll.observe(el));
-
-        setTimeout(() => {
-            revealElements.forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight) {
-                    el.classList.add('active');
-                }
-            });
-        }, 100);
-    }
-
     static initPasswordToggle() {
         const passToggle = document.querySelector('.password-toggle');
         const passInput = document.getElementById('reg-password');

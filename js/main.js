@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new Tabs();
 
     // 3. Utilities initialization
-    Utils.initRevealOnScroll();
     Utils.initPasswordToggle();
     Utils.initTiltEffect();
 });

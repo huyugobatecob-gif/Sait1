@@ -17,7 +17,10 @@
         <div class="header__container container">
             <div class="header__left">
                 <a href="#home" class="logo" aria-label="На главную" tabindex="0">
-                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                    </picture>
                 </a>
             </div>
 
@@ -27,7 +30,7 @@
                 <span class="burger-btn__line"></span>
             </button> <!-- Hamburger for mobile -->
 
-            <nav class="nav" id="main-nav">
+            <nav class="nav" id="main-nav" aria-label="Основная навигация">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html#home" class="nav__link" tabindex="0">Главная</a></li>
                     <li class="nav__item"><a href="register.html" class="nav__link nav__link--blue"
@@ -49,11 +52,11 @@
 
     <main class="main">
         <!-- Hero Section -->
-        <section id="register-hero" class="hero register-hero">
+        <section aria-labelledby="heading-register-0" id="register-hero" class="hero register-hero">
             <div class="hero__container container">
                 <div class="hero__content">
                     <span class="hero__subtitle">Личный кабинет</span>
-                    <h1 class="hero__title">Регистрация в Champion slots</h1>
+                    <h id="heading-register-0" 1 class="hero__title">Регистрация в Champion slots</h1>
                     <p class="hero__text reveal">Личный кабинет — это ваш центр управления слотами, лайв-играми,
                         бонусами, платежами и турнирами.</p>
                     <div class="hero__actions reveal" style="transition-delay: 100ms;">
@@ -66,7 +69,7 @@
             </div>
             <!-- Wave Shape Divider -->
             <div class="custom-shape-divider-bottom wave-anim">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -76,13 +79,13 @@
         </section>
 
         <!-- Form and Instructions -->
-        <section class="section register-main" id="register">
+        <section aria-labelledby="heading-register-1" class="section register-main" id="register">
             <div class="container register-main__container">
 
                 <!-- Left: Form Widget -->
                 <div class="register-form-widget reveal">
                     <div class="form-widget__header">
-                        <h2 class="form-widget__title">Регистрация</h2>
+                        <h id="heading-register-1" 2 class="form-widget__title">Регистрация</h2>
                         <button class="form-widget__close" aria-label="Закрыть">×</button>
                     </div>
 
@@ -124,7 +127,7 @@
                                 <input type="password" id="reg-password" class="form-input" placeholder=" " required>
                                 <label for="reg-password" class="form-label">Пароль</label>
                                 <button type="button" class="password-toggle" aria-label="Показать пароль">
-                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
                                         <circle cx="12" cy="12" r="3"></circle>
                                     </svg>
@@ -195,9 +198,9 @@
         </section>
 
         <!-- Account Creation Steps -->
-        <section class="section section--dark register-guide">
+        <section aria-labelledby="heading-register-2" class="section section--dark register-guide">
             <div class="container register-guide__container reveal">
-                <h2 class="section__title text-center">Создание аккаунта в Champion slots</h2>
+                <h id="heading-register-2" 2 class="section__title text-center">Создание аккаунта в Champion slots</h2>
                 <div class="guide-content">
                     <p class="guide-intro">Процедура регистрации занимает не более пары минут. Для удобства
                         пользователей мы подготовили краткое руководство:</p>
@@ -220,7 +223,7 @@
         </section>
 
         <!-- Illustration Banner -->
-        <section class="section register-illustration">
+        <section aria-labelledby="heading-register-3" class="section register-illustration">
             <div class="container reveal">
                 <div class="illustration-banner">
                     <!-- Text overlay within banner if needed, mostly handled by background image / CSS -->
@@ -231,7 +234,7 @@
         <!-- Verification -->
         <section class="section section--dark register-verification">
             <div class="container register-verification__container reveal">
-                <h2 class="section__title text-center">Подтверждение личности</h2>
+                <h id="heading-register-3" 2 class="section__title text-center">Подтверждение личности</h2>
                 <div class="verification-content text-columns">
                     <p>Верификация — стандартная процедура, направленная на защиту финансовых операций и предотвращение
                         мошенничества. Руководство платформы гарантирует полную конфиденциальность переданных данных.
@@ -248,7 +251,7 @@
             </div>
             <!-- Soft Wave -->
             <div class="custom-shape-divider-bottom wave-anim">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -258,10 +261,10 @@
         </section>
 
         <!-- Personal Cabinet -->
-        <section class="section register-cabinet">
+        <section aria-labelledby="heading-register-4" class="section register-cabinet">
             <div class="container register-cabinet__container">
                 <div class="register-cabinet__content reveal">
-                    <h2 class="section__title section__title--left">Личный кабинет Champion slots</h2>
+                    <h id="heading-register-4" 2 class="section__title section__title--left">Личный кабинет Champion slots</h2>
                     <p class="cabinet-intro">После авторизации открывается доступ к полному функционалу казино. Дашборд
                         пользователя интуитивно понятен и разделен на несколько ключевых вкладок:</p>
                     <ul class="cabinet-features">
@@ -281,23 +284,29 @@
                 </div>
                 <!-- Placeholder visual (can be an illustration or 3D render) -->
                 <div class="register-cabinet__visual reveal" style="transition-delay: 150ms;">
-                    <img src="images/live-dealer.png" alt="Игровой процесс и личный кабинет" class="cabinet-img"
-                        loading="lazy">
+                    <picture>
+                        <source srcset="images/live-dealer.webp" type="image/webp">
+                        <img src="images/live-dealer.png" alt="Игровой процесс и личный кабинет" class="cabinet-img"
+                            width="640" height="640" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </section>
 
         <!-- Promo Cards -->
-        <section class="section register-promos">
+        <section aria-labelledby="heading-register-5" class="section register-promos">
             <div class="container register-promos__container reveal">
 
                 <a href="#promo1" class="promo-card promo-card--purple" tabindex="0">
                     <div class="promo-card__content">
                         <span class="promo-card__badge">Бездепы за регистрацию</span>
-                        <h3 class="promo-card__title">Забирайте 350 000 RUB<br>и 500 FS!</h3>
+                        <h id="heading-register-5" 3 class="promo-card__title">Забирайте 350 000 RUB<br>и 500 FS!</h3>
                         <p class="promo-card__text">Стартовый пакет для новых чемпионов.</p>
                     </div>
-                    <img src="images/prisent_no_bg.png" alt="Подарок" class="promo-card__icon" loading="lazy">
+                    <picture>
+                        <source srcset="images/prisent_no_bg.webp" type="image/webp">
+                        <img src="images/prisent_no_bg.png" alt="Подарок" class="promo-card__icon" loading="lazy">
+                    </picture>
                 </a>
 
                 <a href="#promo2" class="promo-card promo-card--blue" tabindex="0">
@@ -306,16 +315,19 @@
                         <h3 class="promo-card__title">Бонус 100%<br>на первые депозиты</h3>
                         <p class="promo-card__text">Удвойте свои шансы на крупный выигрыш.</p>
                     </div>
-                    <img src="images/prisent_no_bg.png" alt="Спорт" class="promo-card__icon" loading="lazy">
+                    <picture>
+                        <source srcset="images/prisent_no_bg.webp" type="image/webp">
+                        <img src="images/prisent_no_bg.png" alt="Спорт" class="promo-card__icon" loading="lazy">
+                    </picture>
                 </a>
 
             </div>
         </section>
 
         <!-- Partners (Re-used from index.html) -->
-        <section id="providers" class="section section--dark providers">
+        <section aria-labelledby="heading-register-6" id="providers" class="section section--dark providers">
             <div class="container text-center reveal">
-                <p class="providers__title">Проверенные провайдеры онлайн казино Champion slots</p>
+                <h id="heading-register-6" 2 class="providers__title">Проверенные провайдеры онлайн казино Champion slots</h2>
                 <div class="providers__list">
                     <div class="providers__logo providers__logo--mrslotty"><span>Mr Slotty</span></div>
                     <div class="providers__logo providers__logo--isoftbet"><span>iSOFTBET</span><br><small>SIMPLY
@@ -323,7 +335,7 @@
                     <div class="providers__logo providers__logo--quickspin"><span
                             class="q">Q</span><span>QUICKSPIN</span></div>
                     <div class="providers__logo providers__logo--yggdrasil">
-                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
                             <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
                         </svg>
@@ -336,10 +348,10 @@
         </section>
 
         <!-- FAQ (Re-used structure, new content) -->
-        <section id="faq" class="section section--dark faq">
+        <section aria-labelledby="heading-register-7" id="faq" class="section section--dark faq">
             <div class="container faq__container">
                 <div class="faq__header text-center reveal">
-                    <h2 class="faq__title">Вопрос &ndash; ответ</h2>
+                    <h id="heading-register-7" 2 class="faq__title">Вопрос &ndash; ответ</h2>
                     <p class="faq__subtitle">Часто задаваемые вопросы</p>
                 </div>
                 <div class="faq__grid reveal">
@@ -394,13 +406,17 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="#home" class="logo" aria-label="На главную" tabindex="0">
-                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                </picture>
             </a>
             <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
         </div>
     </footer>
 
     <script type="module" src="js/main.js"></script>
+    <script src="js/reveal.js" defer></script>
 </body>
 
 </html>

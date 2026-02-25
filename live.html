@@ -17,7 +17,10 @@
         <div class="header__container container">
             <div class="header__left">
                 <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                    </picture>
                 </a>
             </div>
 
@@ -27,7 +30,7 @@
                 <span class="burger-btn__line"></span>
             </button> <!-- Hamburger for mobile -->
 
-            <nav class="nav" id="main-nav">
+            <nav class="nav" id="main-nav" aria-label="Основная навигация">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link" tabindex="0">Главная</a></li>
                     <li class="nav__item"><a href="register.html" class="nav__link" tabindex="0">Регистрация</a></li>
@@ -48,12 +51,12 @@
 
     <main class="main">
         <!-- Hero Блок -->
-        <section class="live-hero">
+        <section aria-labelledby="heading-live-0" class="live-hero">
             <div class="live-hero__bg"></div>
             <div class="live-hero__container container">
                 <div class="live-hero__content">
                     <span class="live-hero__subtitle">карточные игры, рулетка, покер...</span>
-                    <h1 class="live-hero__title">Live-дилеры Champion slots</h1>
+                    <h id="heading-live-0" 1 class="live-hero__title">Live-дилеры Champion slots</h1>
                     <p class="live-hero__text">
                         Добро пожаловать в раздел live-казино. Ощутите атмосферу настоящего игрового клуба,
                         играя с реальными дилерами в прямом эфире. Вас ждут качественные трансляции,
@@ -69,7 +72,7 @@
             </div>
             <!-- Wave Shape Divider -->
             <div class="custom-shape-divider-bottom live-hero__wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -79,14 +82,17 @@
         </section>
 
         <!-- Блэкджек Champion slots -->
-        <section class="live-bj section">
+        <section aria-labelledby="heading-live-1" class="live-bj section">
             <div class="live-bj__container container">
                 <div class="live-bj__visual">
-                    <img src="images/blackjack_poster.png" alt="Black Jack" class="live-bj__img"
-                        onerror="this.onerror=null; this.src='images/promo_slide_3.png'">
+                    <picture>
+                        <source srcset="images/blackjack_poster.webp" type="image/webp">
+                        <img src="images/blackjack_poster.png" alt="Black Jack" class="live-bj__img" loading="lazy"
+                            onerror="this.onerror=null; this.src=" images promo_slide_3 png>
+                    </picture>
                 </div>
                 <div class="live-bj__content">
-                    <h2 class="live-bj__title">Блэкджек Champion slots</h2>
+                    <h id="heading-live-1" 2 class="live-bj__title">Блэкджек Champion slots</h2>
                     <p class="live-bj__text">Блэкджек — одна из самых популярных карточных игр в мире, которая
                         привлекает простыми правилами и высокой динамикой. Ваша главная цель — собрать комбинацию карт,
                         сумма очков которых максимально близка к 21, но не превышает это значение, и при этом обыграть
@@ -110,9 +116,9 @@
         </section>
 
         <!-- Рулетка Champion slots -->
-        <section class="live-roulette section section--dark">
+        <section aria-labelledby="heading-live-2" class="live-roulette section section--dark">
             <div class="container live-roulette__container">
-                <h2 class="section__title text-center">Рулетка Champion slots</h2>
+                <h id="heading-live-2" 2 class="section__title text-center">Рулетка Champion slots</h2>
                 <div class="live-roulette__top-text text-center">
                     <p>Онлайн-рулетка с живым дилером предлагает вам 100% аутентичный опыт посещения наземного казино.
                         Следите за вращением колеса в высоком разрешении с нескольких ракурсов и делайте ставки в режиме
@@ -128,9 +134,12 @@
                 </div>
 
                 <div class="live-roulette__banner">
-                    <img src="images/live_roulette_banner.png" alt="Live Casino Banner"
-                        class="live-roulette__banner-img"
-                        onerror="this.onerror=null; this.src='images/promo_slide_5.png'">
+                    <picture>
+                        <source srcset="images/live_roulette_banner.webp" type="image/webp">
+                        <img src="images/live_roulette_banner.png" alt="Live Casino Banner"
+                            class="live-roulette__banner-img" width="640" height="640" loading="lazy"
+                            onerror="this.onerror=null; this.src=" images promo_slide_5 png>
+                    </picture>
                 </div>
 
                 <div class="live-roulette__bottom">
@@ -158,10 +167,10 @@
         </section>
 
         <!-- Стратегии для карточных игр -->
-        <section class="live-strategies section">
+        <section aria-labelledby="heading-live-3" class="live-strategies section">
             <div class="live-strategies__container container">
                 <div class="live-strategies__content">
-                    <h2 class="live-strategies__title">Стратегии для карточных игр</h2>
+                    <h id="heading-live-3" 2 class="live-strategies__title">Стратегии для карточных игр</h2>
                     <p class="live-strategies__text">Хотя карточные игры в казино во многом зависят от благосклонности
                         фортуны, использование правильных и проверенных стратегий может значительно повысить ваши шансы
                         на успех и продлить удовольствие от игрового процесса.</p>
@@ -186,23 +195,30 @@
                     </div>
                 </div>
                 <div class="live-strategies__visual">
-                    <img src="images/strategy_girl.png" alt="Девушка дилер" class="live-strategies__img"
-                        onerror="this.onerror=null; this.src='images/live-dealer.png'">
+                    <picture>
+                        <source srcset="images/strategy_girl.webp" type="image/webp">
+                        <img src="images/strategy_girl.png" alt="Девушка дилер" class="live-strategies__img"
+                            loading="lazy" onerror="this.onerror=null; this.src=" images live-dealer png>
+                    </picture>
                 </div>
             </div>
         </section>
 
         <!-- Промо-баннеры (как на других страницах) -->
-        <section class="live-promos section">
+        <section aria-labelledby="heading-live-4" class="live-promos section">
             <div class="container live-promos__grid">
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1" class="promo-slide promo-slide--blue"
                     tabindex="0" target="_blank">
                     <div class="promo-slide__content">
                         <span class="promo-slide__top">Бонус за регистрацию</span>
-                        <h3 class="promo-slide__title">+ 350 000 RUB<br>и 600 FS</h3>
+                        <h id="heading-live-4" 3 class="promo-slide__title">+ 350 000 RUB<br>и 600 FS</h3>
                         <span class="promo-slide__bottom">Персонаж бонус</span>
                     </div>
-                    <img src="images/promo_slide_1.png" alt="Бонус за регистрацию" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_1.webp" type="image/webp">
+                        <img src="images/promo_slide_1.png" alt="Бонус за регистрацию" class="promo-slide__img"
+                            width="640" height="640" loading="lazy">
+                    </picture>
                 </a>
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                     class="promo-slide promo-slide--purple" tabindex="0" target="_blank">
@@ -211,15 +227,19 @@
                         <h3 class="promo-slide__title">10 000 RUB всем<br>новым игрокам</h3>
                         <span class="promo-slide__bottom">Единовременный подарок</span>
                     </div>
-                    <img src="images/promo_slide_2.png" alt="Статус Чемпиона" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_2.webp" type="image/webp">
+                        <img src="images/promo_slide_2.png" alt="Статус Чемпиона" class="promo-slide__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </a>
             </div>
         </section>
 
         <!-- Наши партнёры -->
-        <section class="section section--dark live-partners">
+        <section aria-labelledby="heading-live-5" class="section section--dark live-partners">
             <div class="container text-center">
-                <h2 class="section__title">Наши партнёры</h2>
+                <h id="heading-live-5" 2 class="section__title">Наши партнёры</h2>
                 <p class="live-partners__subtitle">Проверенные провайдеры онлайн казино Champion slots</p>
                 <div class="providers__list live-partners__list">
                     <div class="providers__logo providers__logo--mrslotty"><span>Mr Slotty</span></div>
@@ -228,7 +248,7 @@
                     <div class="providers__logo providers__logo--quickspin"><span
                             class="q">Q</span><span>QUICKSPIN</span></div>
                     <div class="providers__logo providers__logo--yggdrasil">
-                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
                             <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
                         </svg>
@@ -241,10 +261,10 @@
         </section>
 
         <!-- FAQ: Вопрос — ответ -->
-        <section class="section section--dark live-faq">
+        <section aria-labelledby="heading-live-6" class="section section--dark live-faq">
             <div class="container faq__container">
                 <div class="faq__header text-center">
-                    <h2 class="faq__title">Вопрос &ndash; ответ</h2>
+                    <h id="heading-live-6" 2 class="faq__title">Вопрос &ndash; ответ</h2>
                     <p class="faq__subtitle">Часто задаваемые вопросы</p>
                 </div>
                 <div class="faq__grid">
@@ -300,7 +320,10 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                </picture>
             </a>
             <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
         </div>

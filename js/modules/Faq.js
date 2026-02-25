@@ -16,14 +16,8 @@ export class Faq {
                 button.removeAttribute('onclick');
 
                 button.addEventListener('click', () => this.handleToggle(button, item));
+                // Native button triggers generic click events on Enter/Space, no extra listener needed.
 
-                // Исправление A11y: управление с клавиатуры
-                button.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                        e.preventDefault();
-                        this.handleToggle(button, item);
-                    }
-                });
             }
         });
     }

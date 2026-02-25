@@ -17,7 +17,10 @@
         <div class="header__container container">
             <div class="header__left">
                 <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                    </picture>
                 </a>
             </div>
 
@@ -27,7 +30,7 @@
                 <span class="burger-btn__line"></span>
             </button>
 
-            <nav class="nav" id="main-nav">
+            <nav class="nav" id="main-nav" aria-label="Основная навигация">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link" tabindex="0">Главная</a></li>
                     <li class="nav__item"><a href="register.html" class="nav__link" tabindex="0">Регистрация</a></li>
@@ -49,11 +52,11 @@
 
     <main class="main">
         <!-- 2. Hero-блок -->
-        <section class="reviews-hero rw-reveal-top">
+        <section aria-labelledby="heading-reviews-0" class="reviews-hero rw-reveal-top">
             <div class="container reviews-hero__container">
                 <div class="reviews-hero__content">
                     <span class="reviews-hero__subtitle rw-fade">Честные мнения игроков</span>
-                    <h1 class="reviews-hero__title rw-slide-up">Отзывы игроков</h1>
+                    <h id="heading-reviews-0" 1 class="reviews-hero__title rw-slide-up">Отзывы игроков</h1>
                     <p class="reviews-hero__text rw-fade-delay">Выбирая онлайн-платформу для игры, пользователи в первую
                         очередь обращают внимание на мнения других игроков и правовой статус оператора. Отзывы о
                         Champion slots помогают понять, насколько ресурс надежен, как быстро обрабатываются выплаты и
@@ -68,7 +71,7 @@
             </div>
 
             <div class="custom-shape-divider-bottom">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -78,19 +81,26 @@
         </section>
 
         <!-- 3. Зачем нужны отзывы? -->
-        <section class="reviews-why section">
+        <section aria-labelledby="heading-reviews-1" class="reviews-why section">
             <div class="container reviews-why__container">
                 <div class="reviews-why__visual rw-scale">
                     <div class="reviews-why__image-wrap">
-                        <img src="images/hero-bg.png" alt="Ноутбук и телефон казино" loading="lazy"
-                            class="reviews-why__img">
+                        <picture>
+                            <source srcset="images/hero-bg.webp" type="image/webp">
+                            <img src="images/hero-bg.png" alt="Ноутбук и телефон казино" class="reviews-why__img"
+                                width="640" height="640">
+                        </picture>
                         <div class="reviews-why__logo-overlay">
-                            <img src="images/logo.png" alt="Лого" class="reviews-why__minilogo">
+                            <picture>
+                                <source srcset="images/logo.webp" type="image/webp">
+                                <img src="images/logo.png" alt="Лого" class="reviews-why__minilogo" width="360"
+                                    height="250">
+                            </picture>
                         </div>
                     </div>
                 </div>
                 <div class="reviews-why__content">
-                    <h2 class="section__title section__title--left rw-stagger">Зачем нужны отзывы?</h2>
+                    <h id="heading-reviews-1" 2 class="section__title section__title--left rw-stagger">Зачем нужны отзывы?</h2>
                     <p class="rw-stagger">Champion slots — это онлайн-казино с многолетним опытом работы и
                         лицензированной деятельностью, которое успело зарекомендовать себя на рынке азартных
                         развлечений. Платформа предлагает пользователям широкий выбор игровых автоматов, настольных игр
@@ -110,9 +120,9 @@
         </section>
 
         <!-- 4. Мнение пользователей -->
-        <section class="reviews-opinion section section--dark">
+        <section aria-labelledby="heading-reviews-2" class="reviews-opinion section section--dark">
             <div class="container">
-                <h2 class="section__title rw-zoom-title">Мнение пользователей — лучший показатель</h2>
+                <h id="heading-reviews-2" 2 class="section__title rw-zoom-title">Мнение пользователей — лучший показатель</h2>
                 <div class="reviews-opinion__content">
                     <p class="rw-op-text text-center">Мнение пользователей — лучший показатель надежности площадки.
                         Champion slots заслужило в целом положительную репутацию. Отзывы игроков — важный источник
@@ -135,8 +145,11 @@
                     </ul>
 
                     <div class="reviews-opinion__visual rw-subtle-parallax">
-                        <img src="images/promo_slide_2.png" alt="Радостный игрок" loading="lazy"
-                            class="reviews-opinion__img">
+                        <picture>
+                            <source srcset="images/promo_slide_2.webp" type="image/webp">
+                            <img src="images/promo_slide_2.png" alt="Радостный игрок" class="reviews-opinion__img"
+                                width="640" height="640" loading="lazy">
+                        </picture>
                         <div class="reviews-opinion__stars">
                             <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
                                 class="star">★</span><span class="star">★</span>
@@ -147,9 +160,9 @@
         </section>
 
         <!-- 5. Где можно изучить отзывы -->
-        <section class="reviews-where section">
+        <section aria-labelledby="heading-reviews-3" class="reviews-where section">
             <div class="container">
-                <h2 class="section__title rw-fade-up">Где можно изучить отзывы игроков</h2>
+                <h id="heading-reviews-3" 2 class="section__title rw-fade-up">Где можно изучить отзывы игроков</h2>
                 <div class="reviews-where__content">
                     <p class="rw-fade-up">Чтобы составить объективное мнение о работе Champion slots, игрокам стоит
                         изучать разные источники.</p>
@@ -170,10 +183,10 @@
         </section>
 
         <!-- 6. Каким отзывам доверять -->
-        <section class="reviews-trust section section--light">
+        <section aria-labelledby="heading-reviews-4" class="reviews-trust section section--light">
             <div class="container reviews-trust__container">
                 <div class="reviews-trust__content">
-                    <h2 class="section__title section__title--left rw-fade-up">Каким отзывам можно доверять?</h2>
+                    <h id="heading-reviews-4" 2 class="section__title section__title--left rw-fade-up">Каким отзывам можно доверять?</h2>
                     <p class="reviews-trust__desc rw-fade-up">В сети можно найти десятки комментариев об Champion slots,
                         но не все из них объективны. Чтобы сформировать правильное мнение, важно уметь отличать реальные
                         отзывы.</p>
@@ -202,8 +215,11 @@
                 </div>
                 <div class="reviews-trust__visual rw-float">
                     <div class="reviews-trust__img-box">
-                        <img src="images/promo_slide_5.png" alt="Золотые кубики" loading="lazy"
-                            class="reviews-trust__img">
+                        <picture>
+                            <source srcset="images/promo_slide_5.webp" type="image/webp">
+                            <img src="images/promo_slide_5.png" alt="Золотые кубики" class="reviews-trust__img"
+                                width="640" height="640" loading="lazy">
+                        </picture>
                         <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                             class="btn btn--outline-white btn-absolute-reg" target="_blank">РЕГИСТРАЦИЯ</a>
                     </div>
@@ -212,16 +228,20 @@
         </section>
 
         <!-- 7. Бонусные баннеры -->
-        <section class="reviews-banners section">
+        <section aria-labelledby="heading-reviews-5" class="reviews-banners section">
             <div class="container reviews-banners__grid">
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                     class="promo-slide promo-slide--blue rw-banner" tabindex="0" target="_blank">
                     <div class="promo-slide__content">
                         <span class="promo-slide__top">БезДепы</span>
-                        <h3 class="promo-slide__title">350 000 RUB +<br>600 FS</h3>
+                        <h id="heading-reviews-5" 3 class="promo-slide__title">350 000 RUB +<br>600 FS</h3>
                         <span class="promo-slide__bottom">Новым игрокам</span>
                     </div>
-                    <img src="images/promo_slide_1.png" alt="Бонус" loading="lazy" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_1.webp" type="image/webp">
+                        <img src="images/promo_slide_1.png" alt="Бонус" class="promo-slide__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </a>
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                     class="promo-slide promo-slide--purple rw-banner" tabindex="0" target="_blank">
@@ -230,15 +250,19 @@
                         <h3 class="promo-slide__title">10 000 RUB<br>новым игрокам</h3>
                         <span class="promo-slide__bottom">Акция</span>
                     </div>
-                    <img src="images/promo_slide_3.png" alt="Бонус 2" loading="lazy" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_3.webp" type="image/webp">
+                        <img src="images/promo_slide_3.png" alt="Бонус 2" class="promo-slide__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </a>
             </div>
         </section>
 
         <!-- 8. Отзывы клиентов -->
-        <section class="reviews-clients section section--dark">
+        <section aria-labelledby="heading-reviews-6" class="reviews-clients section section--dark">
             <div class="container">
-                <h2 class="section__title rw-fade-up">Отзывы клиентов о Champion slots</h2>
+                <h id="heading-reviews-6" 2 class="section__title rw-fade-up">Отзывы клиентов о Champion slots</h2>
                 <div class="reviews-clients__grid">
                     <div class="client-card rw-client-card">
                         <div class="client-card__bg"></div>
@@ -316,9 +340,9 @@
         </section>
 
         <!-- 9. Партнёры -->
-        <section id="providers" class="section section--dark providers rw-partners">
+        <section aria-labelledby="heading-reviews-7" id="providers" class="section section--dark providers rw-partners">
             <div class="container text-center">
-                <h2 class="section__title rw-fade-up">Наши партнеры</h2>
+                <h id="heading-reviews-7" 2 class="section__title rw-fade-up">Наши партнеры</h2>
                 <div class="providers__list rw-partner-list">
                     <div class="providers__logo providers__logo--mrslotty"><span>Mr Slotty</span></div>
                     <div class="providers__logo providers__logo--isoftbet"><span>iSOFTBET</span><br><small>SIMPLY
@@ -326,7 +350,7 @@
                     <div class="providers__logo providers__logo--quickspin"><span
                             class="q">Q</span><span>QUICKSPIN</span></div>
                     <div class="providers__logo providers__logo--yggdrasil">
-                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
                             <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
                         </svg>
@@ -339,10 +363,10 @@
         </section>
 
         <!-- 10. FAQ -->
-        <section id="faq" class="section faq rw-faq-section">
+        <section aria-labelledby="heading-reviews-8" id="faq" class="section faq rw-faq-section">
             <div class="container faq__container">
                 <div class="faq__header text-center rw-fade-up">
-                    <h2 class="faq__title">FAQ</h2>
+                    <h id="heading-reviews-8" 2 class="faq__title">FAQ</h2>
                 </div>
                 <div class="faq__grid">
                     <div class="faq__item rw-faq-item">
@@ -393,7 +417,10 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                </picture>
             </a>
             <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
         </div>
@@ -406,6 +433,7 @@
     <!-- Scripts -->
     <script type="module" src="js/main.js"></script>
     <script src="js/reviews.js" defer></script>
+    <script src="js/reveal.js" defer></script>
 </body>
 
 </html>

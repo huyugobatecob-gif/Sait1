@@ -17,7 +17,10 @@
         <div class="header__container container">
             <div class="header__left">
                 <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                    <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                    <picture>
+                        <source srcset="images/logo.webp" type="image/webp">
+                        <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                    </picture>
                 </a>
             </div>
 
@@ -27,7 +30,7 @@
                 <span class="burger-btn__line"></span>
             </button>
 
-            <nav class="nav" id="main-nav">
+            <nav class="nav" id="main-nav" aria-label="Основная навигация">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link" tabindex="0">Главная</a></li>
                     <li class="nav__item"><a href="register.html" class="nav__link" tabindex="0">Регистрация</a></li>
@@ -48,11 +51,11 @@
 
     <main class="main">
         <!-- 1. Hero-блок -->
-        <section class="sl-hero sl-reveal-hero">
+        <section aria-labelledby="heading-slots-0" class="sl-hero sl-reveal-hero">
             <div class="container sl-hero__container">
                 <div class="sl-hero__content">
                     <span class="sl-hero__pretitle sl-anim-fade">Лучшие автоматы и джекпоты</span>
-                    <h1 class="sl-hero__title sl-anim-up">Игровые автоматы Champion slots</h1>
+                    <h id="heading-slots-0" 1 class="sl-hero__title sl-anim-up">Игровые автоматы Champion slots</h1>
                     <p class="sl-hero__text sl-anim-delay">Онлайн-слоты остаются самым востребованным форматом азартных
                         игр, и Champion slots предлагает одну из крупнейших коллекций автоматов для игроков. Здесь можно
                         найти все — от классики с простыми правилами до современных видеослотов с бонусными функциями и
@@ -69,7 +72,7 @@
             <div class="sl-hero__bg"></div>
 
             <div class="custom-shape-divider-bottom sl-wave">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
                     <path
                         d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C50.47,82.2,207.13,77.67,321.39,56.44Z"
@@ -79,14 +82,17 @@
         </section>
 
         <!-- 2. Топовые слоты и джекпоты -->
-        <section class="sl-top section">
+        <section aria-labelledby="heading-slots-1" class="sl-top section">
             <div class="container sl-top__container">
                 <div class="sl-top__visual sl-anim-float">
-                    <img src="images/777_slot.png" alt="Слот 777" class="sl-top__img"
-                        onerror="this.onerror=null; this.src='images/olympus.png'">
+                    <picture>
+                        <source srcset="images/777_slot.webp" type="image/webp">
+                        <img src="images/777_slot.png" alt="Слот 777" class="sl-top__img" loading="lazy"
+                            onerror="this.onerror=null; this.src=" images olympus png>
+                    </picture>
                 </div>
                 <div class="sl-top__content">
-                    <h2 class="sl-top__title sl-text-reveal">Топовые слоты и джекпоты</h2>
+                    <h id="heading-slots-1" 2 class="sl-top__title sl-text-reveal">Топовые слоты и джекпоты</h2>
                     <p class="sl-top__text sl-text-reveal">Игровая коллекция Champion slots представляет собой обширную
                         и разнообразную библиотеку азартных развлечений, в которую входят как проверенные временем
                         классические игровые автоматы, так и современные видеослоты с продвинутыми механиками.
@@ -109,10 +115,10 @@
         </section>
 
         <!-- 3. Лучшие слоты Champion slots -->
-        <section class="sl-best section" style="background-color: #38424b; color: #ffffff;">
+        <section aria-labelledby="heading-slots-2" class="sl-best section" style="background-color: #38424b; color: #ffffff;">
             <div class="container sl-best__container">
                 <div class="sl-best__header sl-fade-up">
-                    <h2 class="section__title text-center" style="color: #ffffff; text-transform: none;">Лучшие слоты
+                    <h id="heading-slots-2" 2 class="section__title text-center" style="color: #ffffff; text-transform: none;">Лучшие слоты
                         Champion slots</h2>
                     <p class="sl-best__desc">Среди тысяч автоматов на платформе есть игры, которые особенно востребованы
                         у пользователей. Слоты сочетают высокий уровень графики, интересные бонусные механики и реальные
@@ -122,85 +128,129 @@
 
                 <div class="sl-best__grid sl-grid-trigger">
                     <div class="sl-game-card">
-                        <img src="images/sun_of_egypt_5.png" alt="Sun of Egypt 5" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/olympus.png'">
+                        <picture>
+                            <source srcset="images/sun_of_egypt_5.webp" type="image/webp">
+                            <img src="images/sun_of_egypt_5.png" alt="Sun of Egypt 5" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                olympus png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/100_extra_crown.png" alt="100 Extra Crown" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/sugar_rush.png'">
+                        <picture>
+                            <source srcset="images/100_extra_crown.webp" type="image/webp">
+                            <img src="images/100_extra_crown.png" alt="100 Extra Crown" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                sugar_rush png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/hit_coins.png" alt="2 Hit Coins" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/fish_road.png'">
+                        <picture>
+                            <source srcset="images/hit_coins.webp" type="image/webp">
+                            <img src="images/hit_coins.png" alt="2 Hit Coins" class="sl-game-card__img" width="640"
+                                height="640" loading="lazy" onerror="this.onerror=null; this.src=" images fish_road png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/gold_nugget_rush.png" alt="Gold Nugget Rush" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/chicken_vegas.png'">
+                        <picture>
+                            <source srcset="images/gold_nugget_rush.webp" type="image/webp">
+                            <img src="images/gold_nugget_rush.png" alt="Gold Nugget Rush" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                chicken_vegas png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/pho_sho.png" alt="Pho Sho" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/le_zeus.png'">
+                        <picture>
+                            <source srcset="images/pho_sho.webp" type="image/webp">
+                            <img src="images/pho_sho.png" alt="Pho Sho" class="sl-game-card__img" width="640"
+                                height="640" loading="lazy" onerror="this.onerror=null; this.src=" images le_zeus png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/ultimate_golden_dragon.png" alt="Ultimate Golden Dragon Inferno"
-                            class="sl-game-card__img" onerror="this.onerror=null; this.src='images/diver.png'">
+                        <picture>
+                            <source srcset="images/ultimate_golden_dragon.webp" type="image/webp">
+                            <img src="images/ultimate_golden_dragon.png" alt="Ultimate Golden Dragon Inferno"
+                                class="sl-game-card__img" width="640" height="640" loading="lazy"
+                                onerror="this.onerror=null; this.src=" images diver png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/bonus_epic_crown.png" alt="Bonus Epic Crown" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/olympus.png'">
+                        <picture>
+                            <source srcset="images/bonus_epic_crown.webp" type="image/webp">
+                            <img src="images/bonus_epic_crown.png" alt="Bonus Epic Crown" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                olympus png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/diamond_hustle.png" alt="Diamond Hustle" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/sugar_rush.png'">
+                        <picture>
+                            <source srcset="images/diamond_hustle.webp" type="image/webp">
+                            <img src="images/diamond_hustle.png" alt="Diamond Hustle" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                sugar_rush png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/wild_tiger_2.png" alt="Wild Tiger 2" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/fish_road.png'">
+                        <picture>
+                            <source srcset="images/wild_tiger_2.webp" type="image/webp">
+                            <img src="images/wild_tiger_2.png" alt="Wild Tiger 2" class="sl-game-card__img" width="640"
+                                height="640" loading="lazy" onerror="this.onerror=null; this.src=" images fish_road png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/crazy_monkey.png" alt="Crazy Monkey" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/chicken_vegas.png'">
+                        <picture>
+                            <source srcset="images/crazy_monkey.webp" type="image/webp">
+                            <img src="images/crazy_monkey.png" alt="Crazy Monkey" class="sl-game-card__img" width="640"
+                                height="640" loading="lazy" onerror="this.onerror=null; this.src=" images chicken_vegas
+                                png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/ares_unleashed.png" alt="Ares Unleashed" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/le_zeus.png'">
+                        <picture>
+                            <source srcset="images/ares_unleashed.webp" type="image/webp">
+                            <img src="images/ares_unleashed.png" alt="Ares Unleashed" class="sl-game-card__img"
+                                width="640" height="640" loading="lazy" onerror="this.onerror=null; this.src=" images
+                                le_zeus png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
                     </div>
                     <div class="sl-game-card">
-                        <img src="images/25_coins.png" alt="25 Coins" class="sl-game-card__img"
-                            onerror="this.onerror=null; this.src='images/diver.png'">
+                        <picture>
+                            <source srcset="images/25_coins.webp" type="image/webp">
+                            <img src="images/25_coins.png" alt="25 Coins" class="sl-game-card__img" width="640"
+                                height="640" loading="lazy" onerror="this.onerror=null; this.src=" images diver png>
+                        </picture>
                         <div class="sl-game-card__overlay">
                             <button class="btn btn--blue sl-game-card__btn">Играть</button>
                         </div>
@@ -229,9 +279,9 @@
         </section>
 
         <!-- 4. Jackpot в Champion slots -->
-        <section class="sl-jackpot section">
+        <section aria-labelledby="heading-slots-3" class="sl-jackpot section">
             <div class="container sl-jackpot__container text-center">
-                <h2 class="section__title sl-jackpot__title sl-fade-up">Jackpot в Champion slots</h2>
+                <h id="heading-slots-3" 2 class="section__title sl-jackpot__title sl-fade-up">Jackpot в Champion slots</h2>
                 <div class="sl-jackpot__intro sl-fade-up">
                     <p>Для многих игроков одним из главных аргументов в пользу выбора слотов Champion slots является
                         шанс выиграть джекпот — крупный приз, который может в разы превышать размер ставки. В игровом
@@ -244,8 +294,11 @@
                 </div>
 
                 <div class="sl-jackpot__banner sl-jackpot-glow">
-                    <img src="images/jackpot_dice.png" alt="Jackpot Banner" class="sl-jackpot__img"
-                        onerror="this.onerror=null; this.src='images/promo_slide_5.png'">
+                    <picture>
+                        <source srcset="images/jackpot_dice.webp" type="image/webp">
+                        <img src="images/jackpot_dice.png" alt="Jackpot Banner" class="sl-jackpot__img" loading="lazy"
+                            onerror="this.onerror=null; this.src=" images promo_slide_5 png>
+                    </picture>
                     <div class="sl-jackpot__particles" id="jackpot-particles"></div>
                 </div>
 
@@ -273,10 +326,10 @@
         </section>
 
         <!-- 5. Live Champion Slots -->
-        <section class="sl-live section section--dark">
+        <section aria-labelledby="heading-slots-4" class="sl-live section section--dark">
             <div class="container sl-live__container">
                 <div class="sl-live__content">
-                    <h2 class="section__title section__title--left sl-fade-up">Live Champion Slots</h2>
+                    <h id="heading-slots-4" 2 class="section__title section__title--left sl-fade-up">Live Champion Slots</h2>
                     <p class="sl-fade-up">Для тех, кто ценит атмосферу реального казино, в Champion slots есть раздел
                         Live Casino. Здесь игроки могут сесть за виртуальный стол, где игру ведут профессиональные
                         дилеры, а трансляция идет в высоком качестве в режиме реального времени. Какие разработки ждут
@@ -297,22 +350,30 @@
                     </ul>
                 </div>
                 <div class="sl-live__visual sl-parallax-img">
-                    <img src="images/live-dealer.png" alt="Live Dealer" class="sl-live__img">
+                    <picture>
+                        <source srcset="images/live-dealer.webp" type="image/webp">
+                        <img src="images/live-dealer.png" alt="Live Dealer" class="sl-live__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </div>
             </div>
         </section>
 
         <!-- 6. Баннеры акций -->
-        <section class="sl-promos section">
+        <section aria-labelledby="heading-slots-5" class="sl-promos section">
             <div class="container sl-promos__grid">
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                     class="promo-slide promo-slide--blue sl-promo-card" tabindex="0" target="_blank">
                     <div class="promo-slide__content">
                         <span class="promo-slide__top">Прокачай депозит</span>
-                        <h3 class="promo-slide__title">590<br>ФРИСПИНОВ</h3>
+                        <h id="heading-slots-5" 3 class="promo-slide__title">590<br>ФРИСПИНОВ</h3>
                         <span class="promo-slide__bottom">Бонус</span>
                     </div>
-                    <img src="images/promo_slide_2.png" alt="590 фриспинов" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_2.webp" type="image/webp">
+                        <img src="images/promo_slide_2.png" alt="590 фриспинов" class="promo-slide__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </a>
                 <a href="https://cass-championslots.bet/go/6Ll?p83780p311049pb6a1"
                     class="promo-slide promo-slide--purple sl-promo-card" tabindex="0" target="_blank">
@@ -321,15 +382,19 @@
                         <h3 class="promo-slide__title">110<br>ФРИСПИНОВ</h3>
                         <span class="promo-slide__bottom">Новым игрокам</span>
                     </div>
-                    <img src="images/promo_slide_1.png" alt="110 фриспинов" class="promo-slide__img">
+                    <picture>
+                        <source srcset="images/promo_slide_1.webp" type="image/webp">
+                        <img src="images/promo_slide_1.png" alt="110 фриспинов" class="promo-slide__img" width="640"
+                            height="640" loading="lazy">
+                    </picture>
                 </a>
             </div>
         </section>
 
         <!-- 7. Партнёры -->
-        <section class="section section--dark sl-partners">
+        <section aria-labelledby="heading-slots-6" class="section section--dark sl-partners">
             <div class="container text-center">
-                <h2 class="section__title sl-fade-up">Провайдеры</h2>
+                <h id="heading-slots-6" 2 class="section__title sl-fade-up">Провайдеры</h2>
                 <div class="providers__list sl-partners-list">
                     <div class="providers__logo providers__logo--mrslotty sl-partner-logo"><span>Mr Slotty</span></div>
                     <div class="providers__logo providers__logo--isoftbet sl-partner-logo">
@@ -338,7 +403,7 @@
                     <div class="providers__logo providers__logo--quickspin sl-partner-logo"><span
                             class="q">Q</span><span>QUICKSPIN</span></div>
                     <div class="providers__logo providers__logo--yggdrasil sl-partner-logo">
-                        <svg viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" class="ygg-icon" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L6 8H18L12 2Z" fill="currentColor" />
                             <path d="M12 22V10M8 14L12 10L16 14" stroke="currentColor" stroke-width="2" />
                         </svg>
@@ -351,10 +416,10 @@
         </section>
 
         <!-- 8. FAQ -->
-        <section class="section sl-faq">
+        <section aria-labelledby="heading-slots-7" class="section sl-faq">
             <div class="container faq__container">
                 <div class="faq__header text-center sl-fade-up">
-                    <h2 class="faq__title">FAQ</h2>
+                    <h id="heading-slots-7" 2 class="faq__title">FAQ</h2>
                 </div>
                 <div class="faq__grid">
                     <div class="faq__item sl-faq-item">
@@ -405,7 +470,10 @@
     <footer class="footer">
         <div class="container footer__container">
             <a href="index.html" class="logo" aria-label="На главную" tabindex="0">
-                <img src="images/logo.png" alt="Champion Slots" class="logo__img">
+                <picture>
+                    <source srcset="images/logo.webp" type="image/webp">
+                    <img src="images/logo.png" alt="Champion Slots" class="logo__img" width="360" height="250">
+                </picture>
             </a>
             <p class="footer__copy">Copyright &copy; 2026 Champion slots</p>
         </div>
