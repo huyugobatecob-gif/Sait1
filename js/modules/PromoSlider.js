@@ -8,6 +8,7 @@ export class PromoSlider {
 
         this.autoPlayInterval = null;
         this.intervalTime = 2000;
+        this.isVisible = false;
 
         this.init();
     }
@@ -26,7 +27,12 @@ export class PromoSlider {
 
     scrollAmount() {
         const slide = this.track.querySelector('.promo-slide');
-        if (!slide) return 320;
+        if (!slide) {
+            const isDesktop = window.innerWidth >= 1200;
+            const isTablet = window.innerWidth >= 768;
+            const visibleSlides = isDesktop ? 3 : isTablet ? 2 : 1;
+            return this.track.clientWidth / visibleSlides;
+        }
 
         const gap = parseInt(window.getComputedStyle(this.track).gap) || 20;
         return slide.offsetWidth + gap;
@@ -51,7 +57,9 @@ export class PromoSlider {
 
     startAutoPlay() {
         this.stopAutoPlay();
-        this.autoPlayInterval = setInterval(() => this.handleNext(), this.intervalTime);
+        if (this.isVisible) {
+            this.autoPlayInterval = setInterval(() => this.handleNext(), this.intervalTime);
+        }
     }
 
     stopAutoPlay() {
@@ -66,8 +74,10 @@ export class PromoSlider {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
+                    this.isVisible = true;
                     this.startAutoPlay();
                 } else {
+                    this.isVisible = false;
                     this.stopAutoPlay();
                 }
             });

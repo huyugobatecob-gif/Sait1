@@ -66,13 +66,4 @@ export class Utils {
             });
         });
     }
-
-    static removeGlobalHandlers() {
-        // Убираем инлайн обработчики onclick и onkeydown с кнопки регистрации/возврата
-        const btnWithHandlers = document.querySelectorAll('[onclick="handleClick(event)"], [onkeydown="handleKeyDown(event)"]');
-        btnWithHandlers.forEach(btn => {
-            btn.removeAttribute('onclick');
-            btn.removeAttribute('onkeydown');
-        });
-    }
 }

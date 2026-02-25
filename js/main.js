@@ -17,5 +17,4 @@ document.addEventListener('DOMContentLoaded', () => {
     Utils.initRevealOnScroll();
     Utils.initPasswordToggle();
     Utils.initTiltEffect();
-    Utils.removeGlobalHandlers();
 });
