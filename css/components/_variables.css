@@ -1,0 +1,15 @@
+/* _variables.css */
+:root {
+    --color-bg-main: #0a0a0f;
+    --color-bg-secondary: #13131c;
+    --color-primary: #ffd700;
+    --color-primary-hover: #e6c200;
+    --color-text-main: #ffffff;
+    --color-text-muted: #a0a0b0;
+    --color-border: #2a2a35;
+
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+
+    --transition-fast: 0.2s ease-in-out;
+    --transition-base: 0.3s ease-in-out;
+}

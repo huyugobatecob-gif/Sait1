@@ -1,0 +1,117 @@
+/* _hero.css */
+/* Hero Section */
+.hero {
+    margin-top: 70px;
+    position: relative;
+    padding: 80px 0 120px 0;
+    background: linear-gradient(rgba(20, 24, 33, 0.8), rgba(20, 24, 33, 0.9)), url('../../images/hero-bg.png') center/cover no-repeat;
+    text-align: left;
+    overflow: hidden;
+}
+
+.hero__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.hero__subtitle {
+    display: block;
+    color: #4A90E2;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.hero__title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.hero__text {
+    font-size: 1rem;
+    color: #c9d1d9;
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.hero__visual {
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.hero__glow-box {
+    position: relative;
+    border-radius: 12px;
+    padding: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15), inset 0 0 15px rgba(255, 255, 255, 0.1);
+    transform: rotateY(-10deg) scale(0.95);
+    transition: transform 0.5s ease;
+    max-width: 600px;
+    width: 100%;
+}
+
+.hero__glow-box:hover {
+    transform: rotateY(0deg) scale(1.0);
+}
+
+.hero__mockup-img {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+    opacity: 0.85;
+}
+
+/* Wave Shape Divider */
+.custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 80px;
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #ffffff;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        padding: 120px 0 160px;
+    }
+
+    .hero__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__title {
+        font-size: 3.5rem;
+    }
+
+    .hero__glow-box {
+        transform: rotateY(-15deg) scale(1);
+    }
+}

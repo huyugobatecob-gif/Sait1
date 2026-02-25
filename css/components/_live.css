@@ -1,0 +1,26 @@
+/* _live.css */
+/* Live Casino */
+.live__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.live__text {
+    color: var(--color-text-muted);
+    margin-bottom: 30px;
+    font-size: 1.125rem;
+}
+
+.live__img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 768px) {
+    .live__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

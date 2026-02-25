@@ -1,0 +1,87 @@
+/* _popular-slots.css */
+/* Popular Slots Now */
+.popular-slots {
+    padding-top: 40px;
+}
+
+.popular-slots__subtitle {
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.popular-slots__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.popular-slots__item {
+    display: block;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #00D2FF;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: borderPulse 2s infinite;
+}
+
+.popular-slots__item:hover,
+.popular-slots__item:focus-visible {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+    z-index: 2;
+}
+
+.popular-slots__img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    animation: animatedSlot 3s ease-in-out infinite;
+    transform-origin: center center;
+}
+
+@keyframes animatedSlot {
+    0% {
+        transform: scale(1) translateY(0);
+        filter: brightness(1);
+    }
+
+    50% {
+        transform: scale(1.04) translateY(-4px);
+        filter: brightness(1.1);
+    }
+
+    100% {
+        transform: scale(1) translateY(0);
+        filter: brightness(1);
+    }
+}
+
+@keyframes borderPulse {
+    0% {
+        border-color: #00D2FF;
+        box-shadow: 0 0 5px rgba(0, 210, 255, 0.2);
+    }
+
+    50% {
+        border-color: #3A7BD5;
+        box-shadow: 0 0 15px rgba(58, 123, 213, 0.6);
+    }
+
+    100% {
+        border-color: #00D2FF;
+        box-shadow: 0 0 5px rgba(0, 210, 255, 0.2);
+    }
+}
+
+@media (min-width: 768px) {
+    .popular-slots__grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+}

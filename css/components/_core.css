@@ -1,0 +1,131 @@
+/* _core.css */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--color-bg-main);
+    color: var(--color-text-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Utilities */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section--dark {
+    background-color: var(--color-bg-secondary);
+}
+
+.section__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-primary);
+}
+
+.section__title--left {
+    text-align: left;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-bg-main);
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+    background-color: var(--color-primary-hover);
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+.btn--secondary {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.btn--secondary:hover,
+.btn--secondary:focus-visible {
+    background-color: rgba(255, 215, 0, 0.1);
+}
+
+.btn--blue {
+    background-color: #007bff;
+    color: var(--color-text-main);
+}
+
+.btn--blue:hover,
+.btn--blue:focus-visible {
+    background-color: #0056b3;
+}
+
+.btn--outline-blue {
+    background-color: transparent;
+    border: 1px solid #3A7BD5;
+    color: var(--color-text-main);
+}
+
+.btn--outline-blue:hover,
+.btn--outline-blue:focus-visible {
+    background-color: rgba(58, 123, 213, 0.1);
+}
+
+.btn--outline-white {
+    background-color: transparent;
+    border: 1px solid var(--color-text-main);
+    color: var(--color-text-main);
+}
+
+.btn--outline-white:hover,
+.btn--outline-white:focus-visible {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn--full {
+    width: 100%;
+}
+
+.btn--small {
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}

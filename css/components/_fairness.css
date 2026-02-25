@@ -1,0 +1,111 @@
+/* _fairness.css */
+/* Fairness */
+.fairness {
+    background: linear-gradient(135deg, #f0f4f8 0%, #d9e2ec 100%);
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.fairness__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.fairness__content {
+    color: #2d3748;
+}
+
+.fairness__subtitle {
+    display: block;
+    color: #007bff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.fairness__title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.fairness__text {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #4a5568;
+}
+
+.fairness__visual {
+    position: relative;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fairness__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.fairness__card {
+    flex: 1;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fairness__card:hover {
+    transform: translateY(-5px) scale(1.02) !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.fairness__card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.fairness__card--1 {
+    transform: translateY(-20px);
+    height: 75%;
+}
+
+.fairness__card--2 {
+    transform: translateY(20px);
+    height: 90%;
+    z-index: 2;
+}
+
+.fairness__card--3 {
+    transform: translateY(-10px);
+    height: 85%;
+    z-index: 1;
+}
+
+.fairness__card--4 {
+    transform: translateY(30px);
+    height: 75%;
+}
+
+@media (min-width: 768px) {
+    .fairness__container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fairness__visual {
+        height: 500px;
+    }
+}

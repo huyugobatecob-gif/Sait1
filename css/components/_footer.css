@@ -1,0 +1,46 @@
+/* _footer.css */
+/* Footer */
+.footer {
+    background: linear-gradient(180deg, #13131c 0%, #0a0a0f 100%);
+    padding: 40px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.footer__copy {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}
+
+.footer .logo__img {
+    height: 105px;
+    mix-blend-mode: screen;
+    animation: pulseLogo 4s infinite ease-in-out;
+}
+
+@keyframes pulseLogo {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 8px rgba(0, 210, 255, 0.3));
+    }
+}
+
+@media (min-width: 768px) {
+    .footer__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

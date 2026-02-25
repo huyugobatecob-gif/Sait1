@@ -1,0 +1,101 @@
+/* _providers.css */
+/* Providers */
+.providers {
+    background-color: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+    padding: 40px 0;
+}
+
+.providers__title {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+    letter-spacing: 0.5px;
+}
+
+.providers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.providers__logo {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 800;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease, color 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%) opacity(0.7);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.providers__logo:hover {
+    transform: scale(1.05);
+    color: #fff;
+    filter: grayscale(0%) opacity(1);
+}
+
+.providers__logo--mrslotty {
+    font-family: 'Courier New', monospace;
+    color: #4A90E2;
+}
+
+.providers__logo--isoftbet {
+    font-family: Impact, sans-serif;
+    color: #F5A623;
+    line-height: 1;
+}
+
+.providers__logo--isoftbet small {
+    font-size: 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.providers__logo--quickspin {
+    color: #F39C12;
+    font-style: italic;
+}
+
+.providers__logo--quickspin .q {
+    font-size: 1.5rem;
+    background: #E67E22;
+    color: #111;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.providers__logo--yggdrasil {
+    color: #E74C3C;
+    font-family: Georgia, serif;
+}
+
+.providers__logo--yggdrasil .ygg-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.providers__logo--playngo {
+    color: #3498DB;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.providers__logo--netent {
+    color: #73C627;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 1px;
+}
+
+@media (min-width: 768px) {
+    .providers__list {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}

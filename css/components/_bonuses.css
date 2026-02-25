@@ -1,0 +1,43 @@
+/* _bonuses.css */
+/* Bonuses */
+.bonuses__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.bonus-card {
+    background-color: var(--color-bg-secondary);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: transform var(--transition-fast);
+}
+
+.bonus-card:hover,
+.bonus-card:focus-visible {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+}
+
+.bonus-card__icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.bonus-card__title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+}
+
+.bonus-card__text {
+    color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+    .bonuses__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

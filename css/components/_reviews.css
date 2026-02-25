@@ -1,0 +1,35 @@
+/* _reviews.css */
+/* Reviews */
+.reviews__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: var(--color-bg-main);
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+}
+
+.review-card__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.review-card__name {
+    font-weight: 700;
+}
+
+.review-card__text {
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+    .reviews__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
